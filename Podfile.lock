@@ -1,0 +1,34 @@
+PODS:
+  - Masonry (1.1.0)
+  - MJRefresh (3.1.12)
+  - MWBasic (0.0.1)
+  - MWService (0.0.1):
+    - MWBasic (~> 0.0.1)
+  - NVActivityIndicatorView (4.4.1):
+    - NVActivityIndicatorView/Presenter (= 4.4.1)
+  - NVActivityIndicatorView/Presenter (4.4.1)
+
+DEPENDENCIES:
+  - Masonry
+  - MJRefresh (= 3.1.12)
+  - MWService
+  - NVActivityIndicatorView (~> 4.4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+    - MJRefresh
+    - MWBasic
+    - MWService
+    - NVActivityIndicatorView
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MWBasic: 71e3f5ced269932a035e22003c352cc971ee397f
+  MWService: ca15e14954c443130c618240e36bf1378ffc2ed7
+  NVActivityIndicatorView: f0a6b0ed2973d9544da268f4eb76696f0a9577b0
+
+PODFILE CHECKSUM: 9e70c4d76b53caad0a1a63f81e613d692d727b8f
+
+COCOAPODS: 1.6.1

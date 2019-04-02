@@ -1,0 +1,6 @@
+framework module Pods_MWView {
+  umbrella header "Pods-MWView-umbrella.h"
+
+  export *
+  module * { export * }
+}

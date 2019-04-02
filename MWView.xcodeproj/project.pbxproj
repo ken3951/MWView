@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3043FFD4AC8EB36AE1BB2D40 /* Pods_MWView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CF3D653DBEA30DF4934C15 /* Pods_MWView.framework */; };
+		3800554B2251B27500BA80E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800554A2251B27500BA80E3 /* AppDelegate.swift */; };
+		3800554D2251B27500BA80E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800554C2251B27500BA80E3 /* ViewController.swift */; };
+		380055502251B27500BA80E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3800554E2251B27500BA80E3 /* Main.storyboard */; };
+		380055522251B27700BA80E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380055512251B27700BA80E3 /* Assets.xcassets */; };
+		380055552251B27700BA80E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380055532251B27700BA80E3 /* LaunchScreen.storyboard */; };
+		380055612251B84500BA80E3 /* MWSingleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055602251B84500BA80E3 /* MWSingleTableView.swift */; };
+		380055632251BA7600BA80E3 /* MWPagedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055622251BA7600BA80E3 /* MWPagedTableView.swift */; };
+		3800559F2253033B00BA80E3 /* MWRegularCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055912253033A00BA80E3 /* MWRegularCollectionView.swift */; };
+		380055A02253033B00BA80E3 /* MWNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055922253033A00BA80E3 /* MWNibView.swift */; };
+		380055A12253033B00BA80E3 /* MWNibLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055932253033A00BA80E3 /* MWNibLabel.swift */; };
+		380055A22253033B00BA80E3 /* MWCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055942253033A00BA80E3 /* MWCollectionView.swift */; };
+		380055A32253033B00BA80E3 /* MWNibImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055952253033A00BA80E3 /* MWNibImageView.swift */; };
+		380055A42253033B00BA80E3 /* MWDeleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055962253033A00BA80E3 /* MWDeleteView.swift */; };
+		380055A52253033B00BA80E3 /* MWTransparentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055972253033A00BA80E3 /* MWTransparentView.swift */; };
+		380055A62253033B00BA80E3 /* MWNibTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055982253033A00BA80E3 /* MWNibTextField.swift */; };
+		380055A72253033B00BA80E3 /* MWTextCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055992253033A00BA80E3 /* MWTextCollectionView.swift */; };
+		380055A82253033B00BA80E3 /* MWBezierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800559A2253033A00BA80E3 /* MWBezierView.swift */; };
+		380055A92253033B00BA80E3 /* MWAdjustCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800559B2253033A00BA80E3 /* MWAdjustCollectionView.swift */; };
+		380055AA2253033B00BA80E3 /* MWPagedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800559C2253033A00BA80E3 /* MWPagedScrollView.swift */; };
+		380055AB2253033B00BA80E3 /* MWTabMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800559D2253033A00BA80E3 /* MWTabMenuView.swift */; };
+		380055AC2253033B00BA80E3 /* MWNibButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800559E2253033B00BA80E3 /* MWNibButton.swift */; };
+		380055B82253049E00BA80E3 /* MWPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055AE2253049E00BA80E3 /* MWPopover.swift */; };
+		380055B92253049E00BA80E3 /* MWNoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055B02253049E00BA80E3 /* MWNoDataView.swift */; };
+		380055BA2253049E00BA80E3 /* mw_ic_no_data@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 380055B12253049E00BA80E3 /* mw_ic_no_data@2x.png */; };
+		380055BB2253049E00BA80E3 /* MWPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055B22253049E00BA80E3 /* MWPickView.swift */; };
+		380055BD2253049E00BA80E3 /* ic_loading_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 380055B52253049E00BA80E3 /* ic_loading_logo@3x.png */; };
+		380055BE2253049E00BA80E3 /* ic_loading_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 380055B62253049E00BA80E3 /* ic_loading_logo@2x.png */; };
+		380055BF2253049E00BA80E3 /* MWProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055B72253049E00BA80E3 /* MWProgressView.swift */; };
+		380055C122530B6400BA80E3 /* mw_area.json in Resources */ = {isa = PBXBuildFile; fileRef = 380055C022530B6400BA80E3 /* mw_area.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03CF3D653DBEA30DF4934C15 /* Pods_MWView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MWView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		380055472251B27500BA80E3 /* MWView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MWView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3800554A2251B27500BA80E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3800554C2251B27500BA80E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3800554F2251B27500BA80E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		380055512251B27700BA80E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		380055542251B27700BA80E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		380055562251B27700BA80E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3800555D2251B59700BA80E3 /* MWView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MWView-Bridging-Header.h"; sourceTree = "<group>"; };
+		380055602251B84500BA80E3 /* MWSingleTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWSingleTableView.swift; sourceTree = "<group>"; };
+		380055622251BA7600BA80E3 /* MWPagedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWPagedTableView.swift; sourceTree = "<group>"; };
+		380055912253033A00BA80E3 /* MWRegularCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWRegularCollectionView.swift; sourceTree = "<group>"; };
+		380055922253033A00BA80E3 /* MWNibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWNibView.swift; sourceTree = "<group>"; };
+		380055932253033A00BA80E3 /* MWNibLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWNibLabel.swift; sourceTree = "<group>"; };
+		380055942253033A00BA80E3 /* MWCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWCollectionView.swift; sourceTree = "<group>"; };
+		380055952253033A00BA80E3 /* MWNibImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWNibImageView.swift; sourceTree = "<group>"; };
+		380055962253033A00BA80E3 /* MWDeleteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWDeleteView.swift; sourceTree = "<group>"; };
+		380055972253033A00BA80E3 /* MWTransparentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWTransparentView.swift; sourceTree = "<group>"; };
+		380055982253033A00BA80E3 /* MWNibTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWNibTextField.swift; sourceTree = "<group>"; };
+		380055992253033A00BA80E3 /* MWTextCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWTextCollectionView.swift; sourceTree = "<group>"; };
+		3800559A2253033A00BA80E3 /* MWBezierView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWBezierView.swift; sourceTree = "<group>"; };
+		3800559B2253033A00BA80E3 /* MWAdjustCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWAdjustCollectionView.swift; sourceTree = "<group>"; };
+		3800559C2253033A00BA80E3 /* MWPagedScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWPagedScrollView.swift; sourceTree = "<group>"; };
+		3800559D2253033A00BA80E3 /* MWTabMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWTabMenuView.swift; sourceTree = "<group>"; };
+		3800559E2253033B00BA80E3 /* MWNibButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWNibButton.swift; sourceTree = "<group>"; };
+		380055AE2253049E00BA80E3 /* MWPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWPopover.swift; sourceTree = "<group>"; };
+		380055B02253049E00BA80E3 /* MWNoDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWNoDataView.swift; sourceTree = "<group>"; };
+		380055B12253049E00BA80E3 /* mw_ic_no_data@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mw_ic_no_data@2x.png"; sourceTree = "<group>"; };
+		380055B22253049E00BA80E3 /* MWPickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWPickView.swift; sourceTree = "<group>"; };
+		380055B52253049E00BA80E3 /* ic_loading_logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_loading_logo@3x.png"; sourceTree = "<group>"; };
+		380055B62253049E00BA80E3 /* ic_loading_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_loading_logo@2x.png"; sourceTree = "<group>"; };
+		380055B72253049E00BA80E3 /* MWProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWProgressView.swift; sourceTree = "<group>"; };
+		380055C022530B6400BA80E3 /* mw_area.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mw_area.json; sourceTree = "<group>"; };
+		8AED6F56B1DBE5A9B4B5B204 /* Pods-MWView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWView.debug.xcconfig"; path = "Target Support Files/Pods-MWView/Pods-MWView.debug.xcconfig"; sourceTree = "<group>"; };
+		D49F531E5C128DB46DDECE37 /* Pods-MWView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWView.release.xcconfig"; path = "Target Support Files/Pods-MWView/Pods-MWView.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		380055442251B27500BA80E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3043FFD4AC8EB36AE1BB2D40 /* Pods_MWView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3800553E2251B27500BA80E3 = {
+			isa = PBXGroup;
+			children = (
+				380055492251B27500BA80E3 /* MWView */,
+				380055482251B27500BA80E3 /* Products */,
+				49EE0A93C40B4ADF1029E9A1 /* Pods */,
+				DE122D0616B8AF3509CE4E2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		380055482251B27500BA80E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				380055472251B27500BA80E3 /* MWView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		380055492251B27500BA80E3 /* MWView */ = {
+			isa = PBXGroup;
+			children = (
+				3800555C2251B57300BA80E3 /* MWView */,
+				3800554A2251B27500BA80E3 /* AppDelegate.swift */,
+				3800554C2251B27500BA80E3 /* ViewController.swift */,
+				3800554E2251B27500BA80E3 /* Main.storyboard */,
+				380055512251B27700BA80E3 /* Assets.xcassets */,
+				380055532251B27700BA80E3 /* LaunchScreen.storyboard */,
+				380055562251B27700BA80E3 /* Info.plist */,
+			);
+			path = MWView;
+			sourceTree = "<group>";
+		};
+		3800555C2251B57300BA80E3 /* MWView */ = {
+			isa = PBXGroup;
+			children = (
+				3800555D2251B59700BA80E3 /* MWView-Bridging-Header.h */,
+				380055AD2253045500BA80E3 /* Display */,
+				380055902253031500BA80E3 /* Template */,
+			);
+			path = MWView;
+			sourceTree = "<group>";
+		};
+		380055902253031500BA80E3 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				3800559B2253033A00BA80E3 /* MWAdjustCollectionView.swift */,
+				3800559A2253033A00BA80E3 /* MWBezierView.swift */,
+				380055942253033A00BA80E3 /* MWCollectionView.swift */,
+				380055962253033A00BA80E3 /* MWDeleteView.swift */,
+				3800559E2253033B00BA80E3 /* MWNibButton.swift */,
+				380055952253033A00BA80E3 /* MWNibImageView.swift */,
+				380055932253033A00BA80E3 /* MWNibLabel.swift */,
+				380055982253033A00BA80E3 /* MWNibTextField.swift */,
+				380055922253033A00BA80E3 /* MWNibView.swift */,
+				3800559C2253033A00BA80E3 /* MWPagedScrollView.swift */,
+				380055622251BA7600BA80E3 /* MWPagedTableView.swift */,
+				380055912253033A00BA80E3 /* MWRegularCollectionView.swift */,
+				380055602251B84500BA80E3 /* MWSingleTableView.swift */,
+				3800559D2253033A00BA80E3 /* MWTabMenuView.swift */,
+				380055992253033A00BA80E3 /* MWTextCollectionView.swift */,
+				380055972253033A00BA80E3 /* MWTransparentView.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		380055AD2253045500BA80E3 /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				380055AF2253049E00BA80E3 /* MWNoDataView */,
+				380055B22253049E00BA80E3 /* MWPickView.swift */,
+				380055C022530B6400BA80E3 /* mw_area.json */,
+				380055AE2253049E00BA80E3 /* MWPopover.swift */,
+				380055B42253049E00BA80E3 /* MWProgressView */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		380055AF2253049E00BA80E3 /* MWNoDataView */ = {
+			isa = PBXGroup;
+			children = (
+				380055B02253049E00BA80E3 /* MWNoDataView.swift */,
+				380055B12253049E00BA80E3 /* mw_ic_no_data@2x.png */,
+			);
+			path = MWNoDataView;
+			sourceTree = "<group>";
+		};
+		380055B42253049E00BA80E3 /* MWProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				380055B52253049E00BA80E3 /* ic_loading_logo@3x.png */,
+				380055B62253049E00BA80E3 /* ic_loading_logo@2x.png */,
+				380055B72253049E00BA80E3 /* MWProgressView.swift */,
+			);
+			path = MWProgressView;
+			sourceTree = "<group>";
+		};
+		49EE0A93C40B4ADF1029E9A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AED6F56B1DBE5A9B4B5B204 /* Pods-MWView.debug.xcconfig */,
+				D49F531E5C128DB46DDECE37 /* Pods-MWView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE122D0616B8AF3509CE4E2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03CF3D653DBEA30DF4934C15 /* Pods_MWView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		380055462251B27500BA80E3 /* MWView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 380055592251B27700BA80E3 /* Build configuration list for PBXNativeTarget "MWView" */;
+			buildPhases = (
+				BEEF33DA669FAAAE0FD6A21D /* [CP] Check Pods Manifest.lock */,
+				380055432251B27500BA80E3 /* Sources */,
+				380055442251B27500BA80E3 /* Frameworks */,
+				380055452251B27500BA80E3 /* Resources */,
+				F9E02597B78FC91D52705ACD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MWView;
+			productName = MWView;
+			productReference = 380055472251B27500BA80E3 /* MWView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3800553F2251B27500BA80E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = mwk;
+				TargetAttributes = {
+					380055462251B27500BA80E3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 380055422251B27500BA80E3 /* Build configuration list for PBXProject "MWView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3800553E2251B27500BA80E3;
+			productRefGroup = 380055482251B27500BA80E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				380055462251B27500BA80E3 /* MWView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		380055452251B27500BA80E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				380055BD2253049E00BA80E3 /* ic_loading_logo@3x.png in Resources */,
+				380055552251B27700BA80E3 /* LaunchScreen.storyboard in Resources */,
+				380055522251B27700BA80E3 /* Assets.xcassets in Resources */,
+				380055C122530B6400BA80E3 /* mw_area.json in Resources */,
+				380055502251B27500BA80E3 /* Main.storyboard in Resources */,
+				380055BE2253049E00BA80E3 /* ic_loading_logo@2x.png in Resources */,
+				380055BA2253049E00BA80E3 /* mw_ic_no_data@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BEEF33DA669FAAAE0FD6A21D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MWView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9E02597B78FC91D52705ACD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MWView/Pods-MWView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/MWBasic/MWBasic.framework",
+				"${BUILT_PRODUCTS_DIR}/MWService/MWService.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MWBasic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MWService.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MWView/Pods-MWView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		380055432251B27500BA80E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				380055A02253033B00BA80E3 /* MWNibView.swift in Sources */,
+				380055AA2253033B00BA80E3 /* MWPagedScrollView.swift in Sources */,
+				3800554D2251B27500BA80E3 /* ViewController.swift in Sources */,
+				380055A92253033B00BA80E3 /* MWAdjustCollectionView.swift in Sources */,
+				380055632251BA7600BA80E3 /* MWPagedTableView.swift in Sources */,
+				3800559F2253033B00BA80E3 /* MWRegularCollectionView.swift in Sources */,
+				380055B82253049E00BA80E3 /* MWPopover.swift in Sources */,
+				380055B92253049E00BA80E3 /* MWNoDataView.swift in Sources */,
+				380055A22253033B00BA80E3 /* MWCollectionView.swift in Sources */,
+				380055A12253033B00BA80E3 /* MWNibLabel.swift in Sources */,
+				380055BF2253049E00BA80E3 /* MWProgressView.swift in Sources */,
+				380055A52253033B00BA80E3 /* MWTransparentView.swift in Sources */,
+				380055A82253033B00BA80E3 /* MWBezierView.swift in Sources */,
+				3800554B2251B27500BA80E3 /* AppDelegate.swift in Sources */,
+				380055A72253033B00BA80E3 /* MWTextCollectionView.swift in Sources */,
+				380055A42253033B00BA80E3 /* MWDeleteView.swift in Sources */,
+				380055BB2253049E00BA80E3 /* MWPickView.swift in Sources */,
+				380055A62253033B00BA80E3 /* MWNibTextField.swift in Sources */,
+				380055612251B84500BA80E3 /* MWSingleTableView.swift in Sources */,
+				380055AB2253033B00BA80E3 /* MWTabMenuView.swift in Sources */,
+				380055A32253033B00BA80E3 /* MWNibImageView.swift in Sources */,
+				380055AC2253033B00BA80E3 /* MWNibButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3800554E2251B27500BA80E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3800554F2251B27500BA80E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		380055532251B27700BA80E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				380055542251B27700BA80E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		380055572251B27700BA80E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		380055582251B27700BA80E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3800555A2251B27700BA80E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AED6F56B1DBE5A9B4B5B204 /* Pods-MWView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MWView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cimen.MWView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3800555B2251B27700BA80E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D49F531E5C128DB46DDECE37 /* Pods-MWView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MWView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cimen.MWView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		380055422251B27500BA80E3 /* Build configuration list for PBXProject "MWView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				380055572251B27700BA80E3 /* Debug */,
+				380055582251B27700BA80E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		380055592251B27700BA80E3 /* Build configuration list for PBXNativeTarget "MWView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3800555A2251B27700BA80E3 /* Debug */,
+				3800555B2251B27700BA80E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3800553F2251B27500BA80E3 /* Project object */;
+}
