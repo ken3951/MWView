@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -252,7 +252,7 @@
 		34D90A7BF112DCD1E0BE41121D071DE8 /* MJRefreshConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshConst.h; path = MJRefresh/MJRefreshConst.h; sourceTree = "<group>"; };
 		38359D5F28482A6EED338B094303ABA9 /* Pods-MWView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MWView-umbrella.h"; sourceTree = "<group>"; };
 		38AF6C19460652375B19CB9CA6CE4263 /* NVActivityIndicatorViewable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorViewable.swift; path = Source/NVActivityIndicatorView/Presenter/NVActivityIndicatorViewable.swift; sourceTree = "<group>"; };
-		3B58C53408D2F1D085ABC8392550B798 /* Pods_MWView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MWView.framework; path = "Pods-MWView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B58C53408D2F1D085ABC8392550B798 /* Pods_MWView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MWView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6676E29D00DA4BF37DAF1614BDD46C /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 		3BC1FFEF84819E29BC01E33C39C508CB /* NVActivityIndicatorView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NVActivityIndicatorView.xcconfig; sourceTree = "<group>"; };
 		3C61E3588047C770F3EC7FEAC5E417AA /* Date+MWExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+MWExtension.swift"; path = "MWBasic/MWBasic/MWExtension/Date+MWExtension.swift"; sourceTree = "<group>"; };
@@ -294,7 +294,7 @@
 		672267B1F7FAE76360C151471C040AC9 /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
 		6821CCEFCD066AC600C8CDEC60C9A038 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		6875B9EB6A86806E13B5682964B44C2D /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackNormalFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
-		6960A5DD362C5C23878B9D22DEC8D1E8 /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NVActivityIndicatorView.framework; path = NVActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6960A5DD362C5C23878B9D22DEC8D1E8 /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NVActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69740C3EBE3A9740EC5C08497FB87028 /* MWCameraManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MWCameraManager.swift; path = MWService/MWService/MWService/MWCameraManager.swift; sourceTree = "<group>"; };
 		6A338D2CF8797E0E307607A38B575EDB /* NSDate+MWCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+MWCategory.h"; path = "MWBasic/MWBasic/CategoryClass/NSDate+MWCategory.h"; sourceTree = "<group>"; };
 		6B516B8AC173D1489889CDEE28B9C8A0 /* MWBasic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MWBasic-umbrella.h"; sourceTree = "<group>"; };
@@ -326,12 +326,12 @@
 		99985EEF5B87BC237C1366B86D456AD1 /* ViewControllerService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewControllerService.swift; path = MWService/MWService/MWService/ViewControllerService.swift; sourceTree = "<group>"; };
 		99E6E93785154160C5470EF30C6E483C /* UIImage+BlurGlass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+BlurGlass.h"; path = "MWBasic/MWBasic/CategoryClass/UIImage+BlurGlass.h"; sourceTree = "<group>"; };
 		9A57CAC6BD0893C0A6B4EDE1B290855B /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		9ABA789BF83735B364F677F8D20914E6 /* MWBasic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MWBasic.framework; path = MWBasic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ABA789BF83735B364F677F8D20914E6 /* MWBasic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWBasic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7D0301BD561045B2C6E7E5C70E7441 /* MJRefreshComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshComponent.m; path = MJRefresh/Base/MJRefreshComponent.m; sourceTree = "<group>"; };
 		9C4115D31CEEB7BE1BD8C3103C062BAF /* UIWebView+MWCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+MWCategory.m"; path = "MWBasic/MWBasic/CategoryClass/UIWebView+MWCategory.m"; sourceTree = "<group>"; };
 		9C88FFB68777CD7138B3F578181AB83A /* NVActivityIndicatorAnimationBallGridBeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallGridBeat.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridBeat.swift; sourceTree = "<group>"; };
 		9CACA4E46F344CE3C911735F53C2B50B /* MWDefine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MWDefine.swift; path = MWBasic/MWBasic/MWDefine.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9ED19B0E29E3B92DED0FC25006BA3E39 /* MWService-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MWService-Info.plist"; sourceTree = "<group>"; };
 		9F9C25724A470451C3A2A4E46644C085 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		A0E1B9D864677D10A636476F803C80CE /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoFooter.h; path = MJRefresh/Base/MJRefreshAutoFooter.h; sourceTree = "<group>"; };
@@ -352,7 +352,7 @@
 		B4EDEB86CC4E04A77B65C7BBBA552B06 /* MJRefreshFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshFooter.m; path = MJRefresh/Base/MJRefreshFooter.m; sourceTree = "<group>"; };
 		B54E5CE8DCA5DBB027A332D504597D3B /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MWService/MWService/AppDelegate.swift; sourceTree = "<group>"; };
 		B555E9961E226780611F5451F5995F19 /* NVActivityIndicatorAnimationBallScaleRipple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleRipple.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRipple.swift; sourceTree = "<group>"; };
-		B5BAF113E181B6558EA6F20C0AA854A2 /* MWService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MWService.framework; path = MWService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5BAF113E181B6558EA6F20C0AA854A2 /* MWService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B603D6974494B6CC32076EC8B8568AB1 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
 		B77A2FC1909E18FD819F4327C7CA143B /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshNormalHeader.m; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.m; sourceTree = "<group>"; };
 		B7E14DD194EC2E12787F288DCF671E89 /* UIView+MWExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+MWExtension.swift"; path = "MWBasic/MWBasic/MWExtension/UIView+MWExtension.swift"; sourceTree = "<group>"; };
@@ -395,7 +395,7 @@
 		DDE249155CE75897F349C6E712E0634E /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
 		E0C3D5B104FD2973426D00B9958F47FB /* UILabel+MWExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+MWExtension.swift"; path = "MWBasic/MWBasic/MWExtension/UILabel+MWExtension.swift"; sourceTree = "<group>"; };
 		E1CB349564443854ECD71A6169E4C0F3 /* MWBasic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWBasic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E31F75C4C1F8FC0A33B31D76F76E160D /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E31F75C4C1F8FC0A33B31D76F76E160D /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3DE4D0E37A717E1CD635BCB47E6C637 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		E3E511C137F97C3E2F8B6ABA3B6057EB /* UserDefaults+MWExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UserDefaults+MWExtension.swift"; path = "MWBasic/MWBasic/MWExtension/UserDefaults+MWExtension.swift"; sourceTree = "<group>"; };
 		E3FC241AE8DC09D3EFB921C0779CB4B1 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
@@ -411,7 +411,7 @@
 		F0E91ED703EF0FA7EFF961F3E2865D63 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
 		F3EFBC93FCDEA45EA92807FC753A58C2 /* NSURLRequest+MWCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+MWCategory.h"; path = "MWBasic/MWBasic/CategoryClass/NSURLRequest+MWCategory.h"; sourceTree = "<group>"; };
 		F5B3E008E4FEA5DFE148CC84320B2805 /* MWBasic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MWBasic-prefix.pch"; sourceTree = "<group>"; };
-		F5FAED10F8194D87406D6B198C585354 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJRefresh.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FAED10F8194D87406D6B198C585354 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CCB4E46A9B764D30E62EF9E24B35E6 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		F8EEC2E938811159C77685B94F7167BE /* UIColor+MWExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+MWExtension.swift"; path = "MWBasic/MWBasic/MWExtension/UIColor+MWExtension.swift"; sourceTree = "<group>"; };
 		F985AFC68584234CAD925828E15C8CC0 /* UIImage+BlurGlass.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+BlurGlass.m"; path = "MWBasic/MWBasic/CategoryClass/UIImage+BlurGlass.m"; sourceTree = "<group>"; };
@@ -530,6 +530,7 @@
 				F3EFBC93FCDEA45EA92807FC753A58C2 /* NSURLRequest+MWCategory.h */,
 				B45DF5575E40729E54371288FEDEE23F /* NSURLRequest+MWCategory.m */,
 				B9F2E49B1A28F08AE894647897D7348F /* String+MWExtension.swift */,
+				06CAD5AE62EDE18F6E0030178C377A78 /* Support Files */,
 				5DD0E559D39842896DFD19FF325E969F /* UIAlertController+MWExtension.swift */,
 				9566283A77E08B143758936A565DAE94 /* UIButton+MWExtension.swift */,
 				F8EEC2E938811159C77685B94F7167BE /* UIColor+MWExtension.swift */,
@@ -549,9 +550,7 @@
 				6048B30AF785A0AF23FABCDA22C120C3 /* UIWebView+MWCategory.h */,
 				9C4115D31CEEB7BE1BD8C3103C062BAF /* UIWebView+MWCategory.m */,
 				E3E511C137F97C3E2F8B6ABA3B6057EB /* UserDefaults+MWExtension.swift */,
-				06CAD5AE62EDE18F6E0030178C377A78 /* Support Files */,
 			);
-			name = MWBasic;
 			path = MWBasic;
 			sourceTree = "<group>";
 		};
@@ -707,7 +706,6 @@
 				97D03673401F20793BA3502C875C934B /* Resources */,
 				7A7B912D34AD3665F996EB456D171D83 /* Support Files */,
 			);
-			name = MJRefresh;
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
@@ -727,7 +725,6 @@
 				5495BFC9A445956870E3A1A734FA5726 /* Presenter */,
 				8D64C57A8CE3FEC4CC5C38589902CC8F /* Support Files */,
 			);
-			name = NVActivityIndicatorView;
 			path = NVActivityIndicatorView;
 			sourceTree = "<group>";
 		};
@@ -758,7 +755,6 @@
 				99985EEF5B87BC237C1366B86D456AD1 /* ViewControllerService.swift */,
 				DB48B82E4366B29E45641A6356BF5C45 /* Support Files */,
 			);
-			name = MWService;
 			path = MWService;
 			sourceTree = "<group>";
 		};
@@ -816,7 +812,6 @@
 				E3DE4D0E37A717E1CD635BCB47E6C637 /* ViewController+MASAdditions.m */,
 				C05368C645923947F0F598A055B7377B /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -1332,11 +1327,7 @@
 				INFOPLIST_FILE = "Target Support Files/MWBasic/MWBasic-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MWBasic/MWBasic.modulemap";
 				PRODUCT_MODULE_NAME = MWBasic;
 				PRODUCT_NAME = MWBasic;
@@ -1404,8 +1395,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -1428,11 +1418,7 @@
 				INFOPLIST_FILE = "Target Support Files/MJRefresh/MJRefresh-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MJRefresh/MJRefresh.modulemap";
 				PRODUCT_MODULE_NAME = MJRefresh;
 				PRODUCT_NAME = MJRefresh;
@@ -1463,11 +1449,7 @@
 				INFOPLIST_FILE = "Target Support Files/MJRefresh/MJRefresh-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MJRefresh/MJRefresh.modulemap";
 				PRODUCT_MODULE_NAME = MJRefresh;
 				PRODUCT_NAME = MJRefresh;
@@ -1563,11 +1545,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-MWView/Pods-MWView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MWView/Pods-MWView.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1601,11 +1579,7 @@
 				INFOPLIST_FILE = "Target Support Files/MWService/MWService-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MWService/MWService.modulemap";
 				PRODUCT_MODULE_NAME = MWService;
 				PRODUCT_NAME = MWService;
@@ -1636,11 +1610,7 @@
 				INFOPLIST_FILE = "Target Support Files/MWBasic/MWBasic-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MWBasic/MWBasic.modulemap";
 				PRODUCT_MODULE_NAME = MWBasic;
 				PRODUCT_NAME = MWBasic;
@@ -1671,11 +1641,7 @@
 				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
 				PRODUCT_MODULE_NAME = Masonry;
 				PRODUCT_NAME = Masonry;
@@ -1706,11 +1672,7 @@
 				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
 				PRODUCT_MODULE_NAME = Masonry;
 				PRODUCT_NAME = Masonry;
@@ -1742,11 +1704,7 @@
 				INFOPLIST_FILE = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.modulemap";
 				PRODUCT_MODULE_NAME = NVActivityIndicatorView;
 				PRODUCT_NAME = NVActivityIndicatorView;
@@ -1778,11 +1736,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-MWView/Pods-MWView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MWView/Pods-MWView.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1815,11 +1769,7 @@
 				INFOPLIST_FILE = "Target Support Files/MWService/MWService-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MWService/MWService.modulemap";
 				PRODUCT_MODULE_NAME = MWService;
 				PRODUCT_NAME = MWService;
@@ -1851,11 +1801,7 @@
 				INFOPLIST_FILE = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.modulemap";
 				PRODUCT_MODULE_NAME = NVActivityIndicatorView;
 				PRODUCT_NAME = NVActivityIndicatorView;

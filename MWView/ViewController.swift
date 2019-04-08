@@ -29,7 +29,13 @@ class ViewController: UIViewController {
             self?.myTableView.reloadData()
         }
         
-        myTableView.cellEditCallBack = {[weak self] (tableView,indexPath) in
+        myTableView.rowEdit(cellCanEditCallBack: { (tableView, indexPath) -> Bool in
+            if indexPath.row % 2 == 1 {
+                return true
+            }
+            return false
+
+        }) { (tableView, indexPath) -> [UITableViewRowAction]? in
             let deleteAction = UITableViewRowAction.init(style: .normal, title: "test") { (action, indexPath) in
                 
             }

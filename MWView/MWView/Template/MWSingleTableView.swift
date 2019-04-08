@@ -17,19 +17,26 @@ public class MWSingleTableView: MWPagedTableView, UITableViewDelegate, UITableVi
     public typealias DataArrayCallBack = () -> Array<Any?>?
     public typealias CellCallBack = (_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell
     public typealias CellClickCallBack = (_ indexPath: IndexPath) -> Void
+    public typealias CellCanEditCallBack = (_ tableView: UITableView, _ indexPath: IndexPath) -> Bool
     public typealias CellEditCallBack = (_ tableView: UITableView, _ indexPath: IndexPath) -> [UITableViewRowAction]?
     
     private var dataArray: Array<Any?>?
     private var dataArrayCallBack: DataArrayCallBack?
     private var cellCallBack: CellCallBack!
     private var cellClickCallBack: CellClickCallBack?
-    public var cellEditCallBack: CellEditCallBack?
+    private var cellCanEditCallBack: CellCanEditCallBack?
+    private var cellEditCallBack: CellEditCallBack?
 
     public func load(dataArrayCallBack: @escaping DataArrayCallBack, cellCallBack: @escaping CellCallBack, cellClickCallBack: CellClickCallBack? = nil) {
         self.dataArrayCallBack = dataArrayCallBack
         self.cellCallBack = cellCallBack
         self.cellClickCallBack = cellClickCallBack
         self.reloadData()
+    }
+    
+    public func rowEdit(cellCanEditCallBack: @escaping CellCanEditCallBack, cellEditCallBack: @escaping CellEditCallBack) {
+        self.cellCanEditCallBack = cellCanEditCallBack
+        self.cellEditCallBack = cellEditCallBack
     }
     
     override public func reloadData() {
@@ -66,6 +73,10 @@ public class MWSingleTableView: MWPagedTableView, UITableViewDelegate, UITableVi
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         self.cellClickCallBack?(indexPath)
+    }
+    
+    public func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return self.cellCanEditCallBack?(tableView,indexPath) ?? false
     }
     
     public func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
