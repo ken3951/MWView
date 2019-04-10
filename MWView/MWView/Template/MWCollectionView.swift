@@ -27,7 +27,7 @@ public class MWCollectionView: UIView {
     public var padding: UIEdgeInsets = UIEdgeInsets(top: 15.0, left: 15.0, bottom: 15.0, right: 15.0)
     
     ///subview 数组
-    private(set) var childViews: Array<UIView> = []
+    public private(set) var childViews: Array<UIView> = []
     
     ///占位view，collectionView没有子view时约束collectionView高度为0
     public var spaceView: MWSpaceView = MWSpaceView()
