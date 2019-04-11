@@ -79,10 +79,14 @@ public class MWProgressView: UIView, MWViewProtocol {
             .mw_cornerRadius(5)
             .mw_addToView(self)
         
+        let image1 = UIImage(named: "ic_loading_logo")
+        let bundle = Bundle(for: type(of: self))
+        let image2 = UIImage(named: "ic_loading_logo", in: bundle, compatibleWith: nil)
+
         logoImgView = UIImageView()
             .mw_bgColor(UIColor.clear)
             .mw_frame(CGRect(x: Int(padding.left), y: Int(padding.top), width: imageWidth, height: imageHeight))
-            .mw_image(UIImage(named: "ic_loading_logo"))
+            .mw_image(image1 ?? image2)
             .mw_addToView(mainView)
         
         titleLabel = UILabel()

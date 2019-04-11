@@ -37,6 +37,9 @@
 		380055BE2253049E00BA80E3 /* ic_loading_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 380055B62253049E00BA80E3 /* ic_loading_logo@2x.png */; };
 		380055BF2253049E00BA80E3 /* MWProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055B72253049E00BA80E3 /* MWProgressView.swift */; };
 		380055C122530B6400BA80E3 /* mw_area.json in Resources */ = {isa = PBXBuildFile; fileRef = 380055C022530B6400BA80E3 /* mw_area.json */; };
+		38BEDA3C225EF6A100718C3D /* RelateGoodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BEDA3B225EF6A100718C3D /* RelateGoodsView.swift */; };
+		38BEDA3F225F119500718C3D /* ic_remove@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BEDA3D225F119500718C3D /* ic_remove@3x.png */; };
+		38BEDA40225F119500718C3D /* ic_remove@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BEDA3E225F119500718C3D /* ic_remove@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +76,9 @@
 		380055B62253049E00BA80E3 /* ic_loading_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_loading_logo@2x.png"; sourceTree = "<group>"; };
 		380055B72253049E00BA80E3 /* MWProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWProgressView.swift; sourceTree = "<group>"; };
 		380055C022530B6400BA80E3 /* mw_area.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mw_area.json; sourceTree = "<group>"; };
+		38BEDA3B225EF6A100718C3D /* RelateGoodsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelateGoodsView.swift; sourceTree = "<group>"; };
+		38BEDA3D225F119500718C3D /* ic_remove@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_remove@3x.png"; sourceTree = "<group>"; };
+		38BEDA3E225F119500718C3D /* ic_remove@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_remove@2x.png"; sourceTree = "<group>"; };
 		8AED6F56B1DBE5A9B4B5B204 /* Pods-MWView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWView.debug.xcconfig"; path = "Target Support Files/Pods-MWView/Pods-MWView.debug.xcconfig"; sourceTree = "<group>"; };
 		D49F531E5C128DB46DDECE37 /* Pods-MWView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWView.release.xcconfig"; path = "Target Support Files/Pods-MWView/Pods-MWView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +116,9 @@
 		380055492251B27500BA80E3 /* MWView */ = {
 			isa = PBXGroup;
 			children = (
+				38BEDA3E225F119500718C3D /* ic_remove@2x.png */,
+				38BEDA3D225F119500718C3D /* ic_remove@3x.png */,
+				38BEDA3B225EF6A100718C3D /* RelateGoodsView.swift */,
 				3800555C2251B57300BA80E3 /* MWView */,
 				3800554A2251B27500BA80E3 /* AppDelegate.swift */,
 				3800554C2251B27500BA80E3 /* ViewController.swift */,
@@ -262,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38BEDA40225F119500718C3D /* ic_remove@2x.png in Resources */,
 				380055BD2253049E00BA80E3 /* ic_loading_logo@3x.png in Resources */,
 				380055552251B27700BA80E3 /* LaunchScreen.storyboard in Resources */,
 				380055522251B27700BA80E3 /* Assets.xcassets in Resources */,
@@ -269,6 +279,7 @@
 				380055502251B27500BA80E3 /* Main.storyboard in Resources */,
 				380055BE2253049E00BA80E3 /* ic_loading_logo@2x.png in Resources */,
 				380055BA2253049E00BA80E3 /* mw_ic_no_data@2x.png in Resources */,
+				38BEDA3F225F119500718C3D /* ic_remove@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +358,7 @@
 				380055BF2253049E00BA80E3 /* MWProgressView.swift in Sources */,
 				380055A52253033B00BA80E3 /* MWTransparentView.swift in Sources */,
 				380055A82253033B00BA80E3 /* MWBezierView.swift in Sources */,
+				38BEDA3C225EF6A100718C3D /* RelateGoodsView.swift in Sources */,
 				3800554B2251B27500BA80E3 /* AppDelegate.swift in Sources */,
 				380055A72253033B00BA80E3 /* MWTextCollectionView.swift in Sources */,
 				380055A42253033B00BA80E3 /* MWDeleteView.swift in Sources */,

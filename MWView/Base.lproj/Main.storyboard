@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,19 +22,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o1u-eO-nF9" customClass="MWSingleTableView" customModule="MWView" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="djJ-Sh-mvx">
+                                <rect key="frame" x="14" y="575" width="345" height="88"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jv2-Og-SvH" customClass="MWTextCollectionView" customModule="MWView">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="85"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="250" constant="85" id="5Pi-Z8-bDI"/>
+                                            <constraint firstAttribute="width" priority="250" constant="200" id="nKF-PD-rTp"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jv2-Og-SvH" secondAttribute="bottom" id="54z-aI-Iob"/>
+                                    <constraint firstAttribute="height" constant="88" id="e7q-bM-TXw"/>
+                                    <constraint firstItem="jv2-Og-SvH" firstAttribute="leading" secondItem="djJ-Sh-mvx" secondAttribute="leading" id="kQ3-aj-BdG"/>
+                                    <constraint firstAttribute="trailing" secondItem="jv2-Og-SvH" secondAttribute="trailing" id="qeu-eP-km4"/>
+                                    <constraint firstItem="jv2-Og-SvH" firstAttribute="top" secondItem="djJ-Sh-mvx" secondAttribute="top" id="xLs-Q0-TNR"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="bH0-0R-ism" firstAttribute="top" secondItem="djJ-Sh-mvx" secondAttribute="bottom" constant="4" id="3j5-CA-ZzX"/>
                             <constraint firstItem="o1u-eO-nF9" firstAttribute="top" secondItem="1jE-hN-Thz" secondAttribute="bottom" id="9hp-9v-C2Y"/>
-                            <constraint firstAttribute="bottom" secondItem="o1u-eO-nF9" secondAttribute="bottom" id="Blb-WI-UHc"/>
+                            <constraint firstAttribute="bottom" secondItem="o1u-eO-nF9" secondAttribute="bottom" constant="100" id="Blb-WI-UHc"/>
                             <constraint firstAttribute="trailing" secondItem="o1u-eO-nF9" secondAttribute="trailing" id="KOH-pM-UOt"/>
+                            <constraint firstItem="djJ-Sh-mvx" firstAttribute="top" secondItem="o1u-eO-nF9" secondAttribute="bottom" constant="8" id="Tch-ON-PNS"/>
                             <constraint firstItem="o1u-eO-nF9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UXr-vr-T9L"/>
+                            <constraint firstAttribute="trailing" secondItem="djJ-Sh-mvx" secondAttribute="trailing" constant="16" id="oLC-Yh-wTJ"/>
+                            <constraint firstItem="djJ-Sh-mvx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="14" id="tbW-Co-ykr"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="goodsContentView" destination="jv2-Og-SvH" id="9Pj-Mu-3QI"/>
+                        <outlet property="goodsScrollView" destination="djJ-Sh-mvx" id="1mI-mB-onS"/>
                         <outlet property="myTableView" destination="o1u-eO-nF9" id="6UT-hi-8tA"/>
                     </connections>
                 </viewController>

@@ -12,10 +12,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myTableView: MWSingleTableView!
     
-    private var dataArray: Array<String> = ["test"]
+    @IBOutlet weak var goodsScrollView: UIScrollView!
+    @IBOutlet weak var goodsContentView: MWTextCollectionView!
     
+    private var dataArray: Array<String> = ["test"]
+    private var selectTags: Array<String> = ["hgfdfb234","3454tgszsgfgg","hgfdfbf234","3454tggszsgfgg","hrhllkrjglskjer","hgfddfb234"]
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        reloadGoodsView()
         
         myTableView.separatorInset = mw_tableViewSeparatorEdge(40, 40)
         myTableView.load(dataArrayCallBack: {[weak self] () -> Array<Any?>? in
@@ -43,6 +49,31 @@ class ViewController: UIViewController {
         }
         
         
+    }
+    
+    private func reloadGoodsView() {
+        goodsContentView.adjustHeight = false
+        goodsContentView.adjustWidth = true
+        goodsContentView.padding = UIEdgeInsets(top: 9, left: 0, bottom: 0, right: 10)
+        goodsContentView.horizontalLeading = 10
+        goodsContentView.removeAllViews()
+        goodsContentView.maxSize = CGSize(width: 1000000, height: 1000)
+        
+        for i in 0..<selectTags.count {
+            let tag = selectTags[i]
+            
+            let goodsView = RelateGoodsView()
+            goodsView.titleLabel.text = tag
+            goodsView.contentView.setDeleteBtnCallBack {[weak self,weak goodsView] in
+                if let index = self?.goodsContentView.childViews.firstIndex(of: goodsView!) {
+                    self?.selectTags.remove(at: index)
+                    self?.reloadGoodsView()
+                }
+            }
+            goodsContentView.addView(goodsView)
+        }
+        
+        goodsContentView.reloadData()
     }
     
 }

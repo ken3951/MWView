@@ -57,7 +57,7 @@ public class MWTextCollectionView: MWCollectionView {
     public var adjustHeight: Bool = true
     
     public var adjustWidth: Bool = false
-
+    
     private var lowestView: UIView?
     
     override public func reloadData() {
@@ -78,18 +78,20 @@ public class MWTextCollectionView: MWCollectionView {
         for i in 0..<childViews.count {
             let view = childViews[i]
             
-            let size = view.frame.size
             
             assert(maxSize != nil, "MWTextCollectionView未设置maxSize")
             
             if adjustWidth {
                 //可以放置子view，设置子view的frame及约束
-                view.frame = CGRect(x: origin_x, y: origin_y, width: size.width, height: size.height)
+                //                view.frame = CGRect(x: origin_x, y: origin_y, width: size.width, height: size.height)
                 view.mas_remakeConstraints { (make) in
-                    make?.top.equalTo()(self)?.with()?.offset()(origin_y)
-                    make?.left.equalTo()(self)?.with()?.offset()(origin_x)
-                    make?.width.equalTo()(size.width)
-                    make?.height.equalTo()(size.height)
+                    make?.top.equalTo()(self)?.with()?.offset()(padding.top)
+                    if i == 0 {
+                        make?.left.equalTo()(self)?.with()?.offset()(padding.left)
+                    }else {
+                        let beforeView = childViews[i - 1]
+                        make?.left.equalTo()(beforeView.mas_right)?.with()?.offset()(horizontalLeading)
+                    }
                     
                     if i == childViews.count - 1 {
                         //最后一个
@@ -98,8 +100,10 @@ public class MWTextCollectionView: MWCollectionView {
                 }
                 
                 
-                origin_x = origin_x + size.width + horizontalLeading
+                //                origin_x = origin_x + size.width + horizontalLeading
             }else{
+                let size = view.frame.size
+                
                 if origin_x + size.width + padding.right > maxSize.width {
                     //当前行放不下，换行
                     origin_x = padding.left
