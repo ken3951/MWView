@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MWView"
-  spec.version      = "0.0.6"
+  spec.version      = "1.0.7"
   spec.summary      = "MWView."
   spec.swift_version = "4.2"
 
@@ -133,7 +133,7 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  spec.dependency "MWService", "~> 0.0.1"
+  spec.dependency "MWService", "~> 1.0.6"
   spec.dependency "MJRefresh", "3.1.12"
   spec.dependency "Masonry"
   spec.dependency "NVActivityIndicatorView", "~> 4.4.0"
