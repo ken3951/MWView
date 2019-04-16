@@ -129,7 +129,7 @@ public protocol MWViewAnimatable {
 public extension MWViewAnimatable where Self : UIView {
     
     //旋转动画
-    public func animation(_ rotation: MWTransformRotation) {
+    func animation(_ rotation: MWTransformRotation) {
         DispatchQueue.main.async {
             let animation = CABasicAnimation(keyPath: rotation.rawValue)
             animation.fromValue = (0)
@@ -141,7 +141,7 @@ public extension MWViewAnimatable where Self : UIView {
     }
     
     ///位移+透明度动画，设置时间,设置动画完成是否移除
-    public func animation(toRect: CGRect? = nil, toAlpha: CGFloat? = nil, duration: TimeInterval, completion: ((_ compleltion: Bool) ->())?) {
+    func animation(toRect: CGRect? = nil, toAlpha: CGFloat? = nil, duration: TimeInterval, completion: ((_ compleltion: Bool) ->())?) {
         
         UIView.animate(withDuration: duration, animations: {
             
@@ -160,7 +160,7 @@ public extension MWViewAnimatable where Self : UIView {
     }
     
     ///缩放动画
-    public func createScaleAnimation(duration:Float, fromValue:Float, toValue:Float) -> CABasicAnimation {
+    func createScaleAnimation(duration:Float, fromValue:Float, toValue:Float) -> CABasicAnimation {
         let scaleAnimation = CABasicAnimation(keyPath: "transform.scale")
         //        if removeOnCompletion {
         //            scaleAnimation.delegate=self

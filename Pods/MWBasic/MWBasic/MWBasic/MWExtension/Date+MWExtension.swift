@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Date {
-    public var mw_year : Int {
+    var mw_year : Int {
         get{
             let calendar = Calendar.current
             return calendar.component(.year, from: self)
@@ -19,7 +19,7 @@ public extension Date {
         }
     }
     
-    public var mw_month : Int {
+    var mw_month : Int {
         get{
             let calendar = Calendar.current
             return calendar.component(.month, from: self)
@@ -29,7 +29,7 @@ public extension Date {
         }
     }
     
-    public var mw_day : Int {
+    var mw_day : Int {
         get{
             let calendar = Calendar.current
             return calendar.component(.day, from: self)
@@ -39,7 +39,7 @@ public extension Date {
         }
     }
     
-    public var mw_hour : Int {
+    var mw_hour : Int {
         get{
             let calendar = Calendar.current
             return calendar.component(.hour, from: self)
@@ -49,7 +49,7 @@ public extension Date {
         }
     }
     
-    public var mw_minute : Int {
+    var mw_minute : Int {
         get{
             let calendar = Calendar.current
             return calendar.component(.minute, from: self)
@@ -59,7 +59,7 @@ public extension Date {
         }
     }
     
-    public var mw_weekday : String {
+    var mw_weekday : String {
         get{
             let weekDays = [NSNull.init(),"周日","周一","周二","周三","周四","周五","周六"]as [Any]
             let calendar = NSCalendar.init(calendarIdentifier: .gregorian)
@@ -74,7 +74,7 @@ public extension Date {
         }
     }
     
-    public var mw_weekday2 : String {
+    var mw_weekday2 : String {
         get{
             let weekDays = [NSNull.init(),"星期日","星期一","星期二","星期三","星期四","星期五","星期六"]as [Any]
             let calendar = NSCalendar.init(calendarIdentifier: .gregorian)
@@ -89,13 +89,13 @@ public extension Date {
         }
     }
     
-    public func mw_numberOfDaysInMonth() -> Int {
+    func mw_numberOfDaysInMonth() -> Int {
         let calendar = Calendar.current
         let days = calendar.range(of: .day, in: .month, for: self)
         return days!.count
     }
     
-    public func mw_string(_ format:String) -> String {
+    func mw_string(_ format:String) -> String {
         let formatter = DateFormatter.init()
         formatter.dateFormat=format
         let string = formatter.string(from: self)
@@ -103,7 +103,7 @@ public extension Date {
     }
     
     //年月日创建date
-    public static func mw_date(year:Int, month:Int, day:Int) -> Date {
+    static func mw_date(year:Int, month:Int, day:Int) -> Date {
         let calendar = Calendar.current
         var components = DateComponents.init()
         components.year = year
@@ -114,7 +114,7 @@ public extension Date {
     }
     
     //年月日时分创建date
-    public static func mw_date(year:Int, month:Int, day:Int, hour:Int, minute:Int) -> Date {
+    static func mw_date(year:Int, month:Int, day:Int, hour:Int, minute:Int) -> Date {
         let calendar = Calendar.current
         var components = DateComponents.init()
         components.year = year
@@ -127,7 +127,7 @@ public extension Date {
     }
     
     ///string转date
-    public static func mw_date(from string:String, format:String) -> Date {
+    static func mw_date(from string:String, format:String) -> Date {
         let formatter = DateFormatter.init()
         formatter.dateFormat=format
         let date = formatter.date(from: string)
@@ -135,7 +135,7 @@ public extension Date {
     }
     
     ///string,根据timeZone转date
-    public static func mw_date(from string:String, format:String, timeZone: Int) -> Date {
+    static func mw_date(from string:String, format:String, timeZone: Int) -> Date {
         let formatter = DateFormatter.init()
         formatter.dateFormat=format
         formatter.timeZone = TimeZone(secondsFromGMT: timeZone)
@@ -143,7 +143,7 @@ public extension Date {
         return date!
     }
     
-    public static func mw_getPreSevenDate() -> Array<Date> {
+    static func mw_getPreSevenDate() -> Array<Date> {
         var list : Array<Date> = []
         let todayDate = Date()
         for i in 0...6 {
@@ -169,13 +169,13 @@ public extension Date {
     }
     
     //当天0点时间戳
-    public func mw_getTodayStartTimeInterval() -> Int {
+    func mw_getTodayStartTimeInterval() -> Int {
         let timeInterval = Int(Date.mw_date(year: self.mw_year, month: self.mw_month, day: self.mw_day).timeIntervalSince1970)
         return timeInterval
     }
     
     //当天23.59分的时间戳
-    public func mw_getTodayEndTimeInterval() -> Int {
+    func mw_getTodayEndTimeInterval() -> Int {
         let timeInterval = self.mw_getTodayStartTimeInterval() + 24 * 60 * 60 - 1
         return timeInterval
     }

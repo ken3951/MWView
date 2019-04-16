@@ -13,7 +13,7 @@ import UIKit
     ///设置圆角
     @IBInspectable public var cornerRadius: CGFloat = 0.0 {
         didSet {
-            layer.cornerRadius = cornerRadius * FIT_WIDTH
+            layer.cornerRadius = cornerRadius * MW_FIT_WIDTH
             layer.masksToBounds = true
         }
     }

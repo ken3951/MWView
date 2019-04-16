@@ -15,13 +15,13 @@ public protocol MWCellLoadService  {
 
 public extension MWCellLoadService where Self : UITableViewCell {
     ///在tableview中注册当前cell,通过nib创建
-    public static func registerIn(_ tableView : UITableView) {
+    static func registerIn(_ tableView : UITableView) {
         let cellNib = UINib(nibName: "\(self)", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "\(self)")
     }
     
     ///在tableview中获取可重用cell
-    public static func getDequeueReusableCellIn(_ tableView : UITableView, indexPath : IndexPath) -> Self {
+    static func getDequeueReusableCellIn(_ tableView : UITableView, indexPath : IndexPath) -> Self {
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(self)", for: indexPath) as! Self
         return cell
     }

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3017A2708331190ED339672C8682F757"
+               BlueprintIdentifier = "E4E1E10C4DF5A0BA2AB492B9FA25A385"
                BuildableName = "MWService.framework"
                BlueprintName = "MWService"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Dictionary {
-    public func mw_JSONString() -> String {
+    func mw_JSONString() -> String {
         if (!JSONSerialization.isValidJSONObject(self)) {
             mw_print_i("无法解析出JSONString")
             return ""
@@ -20,7 +20,7 @@ public extension Dictionary {
         
     }
     
-    public func mw_JSONData() -> Data? {
+    func mw_JSONData() -> Data? {
         if (!JSONSerialization.isValidJSONObject(self)) {
             mw_print_i("无法解析出JSONData")
             return nil

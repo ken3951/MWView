@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 
 public extension UIImage {
-    public enum CombineOrientation {
+    enum CombineOrientation {
         case horizontal
         case vertical
     }
     
     //根据图片生成颜色
-    public static func mw_createImage(color: UIColor) -> UIImage? {
+    static func mw_createImage(color: UIColor) -> UIImage? {
         let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
         UIGraphicsBeginImageContext(rect.size)
         let context = UIGraphicsGetCurrentContext()
@@ -28,7 +28,7 @@ public extension UIImage {
     }
     
     //根据方向合成图片
-    public func mw_combine(image: UIImage, orientation: CombineOrientation) -> UIImage {
+    func mw_combine(image: UIImage, orientation: CombineOrientation) -> UIImage {
         var totalWidth : CGFloat!
         var totalHeight : CGFloat!
         var firstImageRect : CGRect!
@@ -72,7 +72,7 @@ public extension UIImage {
     }
     
     //压缩图片到指定大小
-    public func mw_scalTo(kb: Int) -> UIImage {
+    func mw_scalTo(kb: Int) -> UIImage {
         let size = kb * 1024
         var compression = 0.9
         let minCompression = 0.1

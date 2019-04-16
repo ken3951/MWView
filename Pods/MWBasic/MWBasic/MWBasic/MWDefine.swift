@@ -1,9 +1,9 @@
 //
-//  HeaderDefine.swift
-//  FunCityMerchant_Swift
+//  MWDefine.swift
+//  MWBasic
 //
-//  Created by mwk_pro on 2017/11/8.
-//  Copyright © 2017年 mwk_pro. All rights reserved.
+//  Created by mwk_pro on 2019/4/4.
+//  Copyright © 2019 mwk. All rights reserved.
 //
 
 
@@ -21,34 +21,39 @@ public let mw_vc_bg_color = UIColor.mw_colorFromHex(hexColor:"f2f2f2")
 
 
 //MARK:屏幕宽度、高度、比例、状态栏高度、上间距、下间距
-public let SCREEN_WIDTH = UIScreen.main.bounds.size.width
-public let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
-public let STATUS_HEIGHT = UIApplication.shared.statusBarFrame.size.height
-public let FIT_WIDTH = UIScreen.main.bounds.size.width / 375.0
-public let FIT_Height = UIScreen.main.bounds.size.height / 667.0
+public let MW_SCREEN_WIDTH = UIScreen.main.bounds.size.width
+public let MW_SCREEN_HEIGHT = UIScreen.main.bounds.size.height
+public let MW_STATUS_HEIGHT = UIApplication.shared.statusBarFrame.size.height
+public let MW_FIT_WIDTH = UIScreen.main.bounds.size.width / 375.0
+public let MW_FIT_Height = UIScreen.main.bounds.size.height / 667.0
 
 //MARK:BlockDefine
-public typealias CallBack = ()->Void
-public typealias AnyCallBack = (_ value: Any?) -> Void
-public typealias BoolCallBack = (_ result: Bool) -> Void
-public typealias IntCallBack = (_ index: Int) -> Void
-public typealias ImageCallBack = (_ image: UIImage?) -> Void
-public typealias StringCallBack = (_ str: String?) -> Void
+public typealias MWCallback = ()->Void
+public typealias MWCGFloatCallback = (_ value: CGFloat?) -> Void
+public typealias MWAnyCallback = (_ value: Any?) -> Void
+public typealias MWBoolCallback = (_ result: Bool) -> Void
+public typealias MWIntCallback = (_ index: Int) -> Void
+public typealias MWImageCallback = (_ image: UIImage?) -> Void
+public typealias MWStringCallback = (_ str: String?) -> Void
 
 
 //MARK:Protocol
-public protocol TitleProtocol {
+public protocol MWTitleProtocol {
     var title: String {get}
 }
 
-public protocol CodeProtocol {
+public protocol MWIdProtocol {
+    var customId: Int {get}
+}
+
+public protocol MWCodeProtocol {
     var code: String {get}
 }
 
-public protocol ColorProtocol {
+public protocol MWColorProtocol {
     var color: UIColor {get}
 }
 
-public protocol ImageNameProtocol {
+public protocol MWImageNameProtocol {
     var imageName: String {get}
 }

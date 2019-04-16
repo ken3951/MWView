@@ -17,7 +17,7 @@ public enum DisplayOrientation: Int {
 
 public extension UIButton {
     //根据方向和间距同时展示文字，图片
-    public func mw_display(orientation: DisplayOrientation,space: CGFloat) -> Self {
+    func mw_display(orientation: DisplayOrientation,space: CGFloat) -> Self {
         var titleEdge : UIEdgeInsets!
         var imageEdge : UIEdgeInsets!
         switch orientation {
@@ -79,7 +79,7 @@ public extension UIButton {
     }
     
     //圆角加边框
-    public func mw_setCornerBorder(cornerRadius: CGFloat,borderColor: UIColor = UIColor.white,borderWidth: CGFloat = 1) -> Self {
+    func mw_setCornerBorder(cornerRadius: CGFloat,borderColor: UIColor = UIColor.white,borderWidth: CGFloat = 1) -> Self {
         self.layer.cornerRadius = cornerRadius
         self.layer.borderColor = borderColor.cgColor
         self.layer.borderWidth = borderWidth
@@ -88,81 +88,81 @@ public extension UIButton {
     }
     
     // default is nil (system font 17 plain)
-    public func mw_font(_ value: UIFont!) -> Self {
+    func mw_font(_ value: UIFont!) -> Self {
         titleLabel?.font = value
         return self
     }
     
     // MARK: Button targer
     
-    public func mw_target(_ target: AnyObject?, action: Selector, forControlEvents: UIControl.Event) -> Self {
+    func mw_target(_ target: AnyObject?, action: Selector, forControlEvents: UIControl.Event) -> Self {
         addTarget(target, action: action, for: forControlEvents)
         return self
     }
     
     // MARK: button title
     
-    public func mw_title(_ value: String, state: UIControl.State) -> Self {
+    func mw_title(_ value: String, state: UIControl.State) -> Self {
         setTitle(value, for: state)
         return self
     }
     
-    public func mw_nomalStateTitle(_ value: String) -> Self {
+    func mw_nomalStateTitle(_ value: String) -> Self {
         setTitle(value, for: .normal)
         return self
     }
     
-    public func mw_highlightedStateTitle(_ value: String) -> Self {
+    func mw_highlightedStateTitle(_ value: String) -> Self {
         setTitle(value, for: .highlighted)
         return self
     }
     
     
-    public func mw_selectedStateTitle(_ value: String) -> Self {
+    func mw_selectedStateTitle(_ value: String) -> Self {
         setTitle(value, for: .selected)
         return self
     }
     
     // MARK: button title color
     
-    public func mw_titleColor(_ value: UIColor, state: UIControl.State) -> Self {
+    func mw_titleColor(_ value: UIColor, state: UIControl.State) -> Self {
         setTitleColor(value, for: state)
         return self
     }
     
-    public func mw_nomalStateTitleColor(_ value: UIColor) -> Self {
+    func mw_nomalStateTitleColor(_ value: UIColor) -> Self {
         setTitleColor(value, for: .normal)
         return self
     }
     
-    public func mw_highlightedStateTitleColor(_ value: UIColor) -> Self {
+    func mw_highlightedStateTitleColor(_ value: UIColor) -> Self {
         setTitleColor(value, for: .highlighted)
         return self
     }
     
-    public func mw_selectedStateTitleColor(_ value: UIColor) -> Self {
+    func mw_selectedStateTitleColor(_ value: UIColor) -> Self {
         setTitleColor(value, for: .selected)
         return self
     }
     
     // MARK: button title shadow color
     
-    public func mw_titleShadowColor(_ value: UIColor, state: UIControl.State) -> Self {
+    func mw_titleShadowColor(_ value: UIColor, state: UIControl.State) -> Self {
         setTitleShadowColor(value, for: state)
         return self
     }
     
-    public func mw_nomalStateTitleShadowColor(_ value: UIColor) -> Self {
+    func mw_nomalStateTitleShadowColor(_ value: UIColor) -> Self {
         setTitleShadowColor(value, for: .normal)
         return self
     }
     
-    public func mw_highlightedStateTitleShadowColor(_ value: UIColor) -> Self {
+    func mw_highlightedStateTitleShadowColor(_ value: UIColor) -> Self {
         setTitleShadowColor(value, for: .highlighted)
         return self
     }
     
-    public func mw_selectedStateTitleShadowColor(_ value: UIColor) -> Self {
+    func mw_selectedStateTitleShadowColor(_ value: UIColor) -> Self {
         setTitleShadowColor(value, for: .selected)
         return self
     }
@@ -170,68 +170,68 @@ public extension UIButton {
     
     // MARK: button image
     
-    public func mw_image(_ value: UIImage?, state: UIControl.State) -> Self {
+    func mw_image(_ value: UIImage?, state: UIControl.State) -> Self {
         setImage(value, for: state)
         return self
     }
     
-    public func mw_nomalStateImage(_ value: UIImage) -> Self {
+    func mw_nomalStateImage(_ value: UIImage) -> Self {
         setImage(value, for: .normal)
         return self
     }
     
-    public func mw_highlightedStateImage(_ value: UIImage) -> Self {
+    func mw_highlightedStateImage(_ value: UIImage) -> Self {
         setImage(value, for: .highlighted)
         return self
     }
     
     
-    public func mw_selectedStateImage(_ value: UIImage) -> Self {
+    func mw_selectedStateImage(_ value: UIImage) -> Self {
         setImage(value, for: .selected)
         return self
     }
     
     // MARK: button background image
     
-    public func mw_backgroundImage(_ image: UIImage, state: UIControl.State) -> Self {
+    func mw_backgroundImage(_ image: UIImage, state: UIControl.State) -> Self {
         setBackgroundImage(image, for: state)
         return self
     }
     
-    public func mw_nomalStateBackgroundImage(_ value: UIImage) -> Self {
+    func mw_nomalStateBackgroundImage(_ value: UIImage) -> Self {
         setBackgroundImage(value, for: .normal)
         return self
     }
     
-    public func mw_highlightedStateBackgroundImage(_ value: UIImage) -> Self {
+    func mw_highlightedStateBackgroundImage(_ value: UIImage) -> Self {
         setBackgroundImage(value, for: .highlighted)
         return self
     }
     
     
-    public func mw_selectedStateBackgroundImage(_ value: UIImage) -> Self {
+    func mw_selectedStateBackgroundImage(_ value: UIImage) -> Self {
         setBackgroundImage(value, for: .selected)
         return self
     }
     
     // MARK: button Attributed Title
     
-    public func mw_attributedTitle(_ attr: NSAttributedString, state: UIControl.State) -> Self {
+    func mw_attributedTitle(_ attr: NSAttributedString, state: UIControl.State) -> Self {
         setAttributedTitle(attr, for: state)
         return self
     }
     
-    public func mw_normalStateAttributedTitle(_ attr: NSAttributedString) -> Self {
+    func mw_normalStateAttributedTitle(_ attr: NSAttributedString) -> Self {
         setAttributedTitle(attr, for: .normal)
         return self
     }
     
-    public func mw_selectedStateAttributedTitle(_ attr: NSAttributedString) -> Self {
+    func mw_selectedStateAttributedTitle(_ attr: NSAttributedString) -> Self {
         setAttributedTitle(attr, for: .selected)
         return self
     }
     
-    public func mw_highLightedStateAttributedTitle(_ attr: NSAttributedString) -> Self {
+    func mw_highLightedStateAttributedTitle(_ attr: NSAttributedString) -> Self {
         setAttributedTitle(attr, for: .highlighted)
         return self
     }

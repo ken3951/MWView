@@ -14,16 +14,16 @@ public class MWProgressView: UIView, MWViewProtocol {
     private var mainView : UIView!
     private var titleLabel : UILabel!
     private var logoImgView : UIImageView!
-
+    
     public static func show(message:String, isLandscape: Bool = false ) {
-        if let fatherView = mw_getCurrentRootVC()?.view {
-            DispatchQueue.main.async {
-                var width = SCREEN_WIDTH > SCREEN_HEIGHT ? SCREEN_WIDTH : SCREEN_HEIGHT
-                var height = SCREEN_WIDTH > SCREEN_HEIGHT ? SCREEN_HEIGHT : SCREEN_WIDTH
+        mw_mainSynWait {
+            if let fatherView = mw_getCurrentRootVC()?.view {
+                var width = MW_SCREEN_WIDTH > MW_SCREEN_HEIGHT ? MW_SCREEN_WIDTH : MW_SCREEN_HEIGHT
+                var height = MW_SCREEN_WIDTH > MW_SCREEN_HEIGHT ? MW_SCREEN_HEIGHT : MW_SCREEN_WIDTH
                 
                 if !isLandscape {
-                    width = SCREEN_WIDTH > SCREEN_HEIGHT ? SCREEN_HEIGHT : SCREEN_WIDTH
-                    height = SCREEN_WIDTH > SCREEN_HEIGHT ? SCREEN_WIDTH : SCREEN_HEIGHT
+                    width = MW_SCREEN_WIDTH > MW_SCREEN_HEIGHT ? MW_SCREEN_HEIGHT : MW_SCREEN_WIDTH
+                    height = MW_SCREEN_WIDTH > MW_SCREEN_HEIGHT ? MW_SCREEN_WIDTH : MW_SCREEN_HEIGHT
                 }
                 
                 let progressView = MWProgressView()
@@ -39,14 +39,16 @@ public class MWProgressView: UIView, MWViewProtocol {
     }
     
     public static func show(_ indicatorType: NVActivityIndicatorType = .ballRotateChase,_ color: UIColor? = UIColor.white) {
-        if let fatherView = mw_getCurrentRootVC()?.view {
-            DispatchQueue.main.async {
-                let progressView = MWProgressView()
-                    .mw_frame(CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT))
-                    .mw_bgColor(UIColor.clear.withAlphaComponent(0.0))
-                    .mw_addToView(fatherView)
-                
-                progressView.initIndicatorView(indicatorType,color: color)
+        mw_mainSynWait {
+            if let fatherView = mw_getCurrentRootVC()?.view {
+                DispatchQueue.main.async {
+                    let progressView = MWProgressView()
+                        .mw_frame(CGRect.init(x: 0, y: 0, width: MW_SCREEN_WIDTH, height: MW_SCREEN_HEIGHT))
+                        .mw_bgColor(UIColor.clear.withAlphaComponent(0.0))
+                        .mw_addToView(fatherView)
+                    
+                    progressView.initIndicatorView(indicatorType,color: color)
+                }
             }
         }
     }
@@ -100,7 +102,7 @@ public class MWProgressView: UIView, MWViewProtocol {
     }
     
     public static func dismiss() {
-        self.dismiss(inView: mw_getCurrentRootVC()?.view)
+        self.dismissInRootView()
     }
     
     /*

@@ -76,5 +76,14 @@ class ViewController: UIViewController {
         goodsContentView.reloadData()
     }
     
+    @IBAction func submitAction(_ sender: UIButton) {
+        DispatchQueue.global().async {
+            MWProgressView.show(message: "正在加载...")
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: {
+                MWProgressView.dismiss()
+            })
+        }
+    }
+    
 }
 

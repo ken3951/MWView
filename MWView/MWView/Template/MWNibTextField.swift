@@ -14,9 +14,9 @@ import UIKit
     @IBInspectable public var textFont: CGFloat = 17.0 {
         didSet {
             if let fontName = font?.fontName {
-                font = UIFont(name: fontName , size: textFont * FIT_WIDTH)
+                font = UIFont(name: fontName , size: textFont * MW_FIT_WIDTH)
             }else{
-                font = UIFont.systemFont(ofSize: textFont * FIT_WIDTH)
+                font = UIFont.systemFont(ofSize: textFont * MW_FIT_WIDTH)
             }
         }
     }
@@ -32,7 +32,7 @@ import UIKit
     ///设置圆角
     @IBInspectable public var cornerRadius: CGFloat = 0.0 {
         didSet {
-            layer.cornerRadius = cornerRadius * FIT_WIDTH
+            layer.cornerRadius = cornerRadius * MW_FIT_WIDTH
             layer.masksToBounds = true
         }
     }

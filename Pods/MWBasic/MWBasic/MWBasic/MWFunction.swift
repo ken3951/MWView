@@ -1,9 +1,9 @@
 //
-//  PublicFunction.swift
-//  EOPPad
+//  MWFunction.swift
+//  MWBasic
 //
-//  Created by mwk_pro on 2018/11/20.
-//  Copyright © 2018 mwk_pro. All rights reserved.
+//  Created by mwk_pro on 2019/4/4.
+//  Copyright © 2019 mwk. All rights reserved.
 //
 
 import Foundation
@@ -46,6 +46,20 @@ public func mw_print_i<T>(_ message: T) {
         message:\(message)
         """))
     #endif
+}
+
+///子线程，主线程皆可使用，等待主线程操作完成
+public func mw_mainSynWait(_ execute: @escaping MWCallback) {
+    if Thread.isMainThread {
+        execute()
+    }else{
+        let semaphore =  DispatchSemaphore(value: 0)
+        DispatchQueue.main.async {
+            execute()
+            semaphore.signal()
+        }
+        semaphore.wait()
+    }
 }
 
 ///拼接路径
@@ -108,20 +122,55 @@ public func mw_getAppName() -> String {
     return appName
 }
 
+///获取当前window截图
+public func mw_getScreenShotFromWindow() -> UIImage? {
+    UIGraphicsBeginImageContextWithOptions(CGSize(width: MW_SCREEN_WIDTH*UIScreen.main.scale, height: MW_SCREEN_HEIGHT*UIScreen.main.scale), true, UIScreen.main.scale)
+    
+    guard let context = UIGraphicsGetCurrentContext() else {
+        return nil
+    }
+    
+    UIApplication.shared.keyWindow?.layer.render(in: context)
+    
+    let viewImage = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+    
+    guard let imageCG = viewImage?.cgImage else {
+        return nil
+    }
+    
+    guard let sendImageCG = imageCG.cropping(to: CGRect(x: 0, y: 0, width: MW_SCREEN_WIDTH*UIScreen.main.scale, height: MW_SCREEN_HEIGHT*UIScreen.main.scale)) else {
+        return nil
+    }
+    
+    let sendImage = UIImage(cgImage: sendImageCG)
+    return sendImage
+    
+}
+
 ///获取视频截图
-public func mw_getScreenShotImageFromLocalVideo(url: URL, completion: @escaping ImageCallBack) {
+public func mw_getScreenShotImageFromLocalVideo(url: URL, seconds: Double = 0.0, completion: @escaping MWImageCallback) {
     DispatchQueue.global().async {
         var shotImage: UIImage?
         let asset = AVURLAsset(url: url, options: nil)
         let gen = AVAssetImageGenerator(asset: asset)
         gen.appliesPreferredTrackTransform = true
-        let time = CMTimeMakeWithSeconds(0.0, preferredTimescale: 600)
+        let totalSeconds = mw_getLocalVideoSeconds(url: url)
+        let time = CMTimeMakeWithSeconds(seconds, preferredTimescale: Int32(totalSeconds) * 4)
         var actualTime: CMTime = CMTime(value: 0, timescale: 0)
         if let image = try? gen.copyCGImage(at: time, actualTime: &actualTime) {
             shotImage = UIImage(cgImage: image)
         }
         completion(shotImage)
     }
+}
+
+///获取视频时长
+public func mw_getLocalVideoSeconds(url: URL) -> CGFloat {
+    let urlAsset = AVURLAsset(url: url)
+    let time = urlAsset.duration
+    let seconds = CGFloat(time.value)/CGFloat(time.timescale)
+    return seconds
 }
 
 ///拨打电话
@@ -143,7 +192,7 @@ public func mw_callPhone(mobile: String?) {
     }}
 
 ///转换视频格式
-public func mw_changeVideoFormatWithSourceUrl(sourceUrl: URL, completion: @escaping StringCallBack) {
+public func mw_changeVideoFormatWithSourceUrl(sourceUrl: URL, completion: @escaping MWStringCallback) {
     let avAsset = AVURLAsset(url: sourceUrl, options: nil)
     let compatiblePresets = AVAssetExportSession.exportPresets(compatibleWith: avAsset)
     if compatiblePresets.contains(AVAssetExportPresetHighestQuality) {

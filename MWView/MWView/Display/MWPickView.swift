@@ -28,7 +28,7 @@ public class MWPickView: UIView ,UIPickerViewDelegate,UIPickerViewDataSource{
     private var pickView : UIPickerView?
     private var contentView : UIView!
     private var currentValue : Any?
-    private var completionBlock : AnyCallBack?
+    private var completionBlock : MWAnyCallback?
     private var pickViewType : PickViewType?
     private var fatherRect : CGRect!
     
@@ -43,12 +43,12 @@ public class MWPickView: UIView ,UIPickerViewDelegate,UIPickerViewDataSource{
                        pickViewType: PickViewType,
                        dataArray: Array<Any>? = nil,
                        currentValue:Any?,
-                       completion:@escaping AnyCallBack) -> Void {
+                       completion:@escaping MWAnyCallback) -> Void {
         if view == nil {
             return
         }
         let selfView = MWPickView().mw_bgColor(UIColor.black.withAlphaComponent(0.6))
-            .mw_frame(CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT))
+            .mw_frame(CGRect(x: 0, y: 0, width: MW_SCREEN_WIDTH, height: MW_SCREEN_HEIGHT))
         selfView.fatherRect = view!.frame
         selfView.pickViewType=pickViewType
         selfView.currentValue=currentValue

@@ -16,7 +16,7 @@ public protocol MWControllerLoadable {
 
 public extension MWControllerLoadable {
     ///扩展VCLoadable协议并实现
-    public static func loadVCWithStoryboard(_ storyboard: String = "Main") -> Self {
+    static func loadVCWithStoryboard(_ storyboard: String = "Main") -> Self {
         let vc = UIStoryboard.init(name: storyboard, bundle: nil).instantiateViewController(withIdentifier: "\(self)") as! Self
         return vc
     }

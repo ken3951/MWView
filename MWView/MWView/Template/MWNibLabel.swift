@@ -13,14 +13,14 @@ import UIKit
     ///文本字体
     @IBInspectable public var textFont: CGFloat = 17.0 {
         didSet {
-            font = UIFont(name: font.fontName , size: textFont * FIT_WIDTH)
+            font = UIFont(name: font.fontName , size: textFont * MW_FIT_WIDTH)
         }
     }
     
     ///设置圆角
     @IBInspectable public var cornerRadius: CGFloat = 0.0 {
         didSet {
-            layer.cornerRadius = cornerRadius * FIT_WIDTH
+            layer.cornerRadius = cornerRadius * MW_FIT_WIDTH
             layer.masksToBounds = true
         }
     }

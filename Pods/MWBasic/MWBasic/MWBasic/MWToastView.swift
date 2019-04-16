@@ -1,6 +1,6 @@
 //
 //  MWToastView.swift
-//  FunCityMerchant_Swift
+//  MWBasic
 //
 //  Created by mwk_pro on 2017/11/29.
 //  Copyright © 2017年 mwk_pro. All rights reserved.
@@ -26,7 +26,7 @@ public func showToast(message: String) {
 
 public class MWToastView: UIView {
     
-    private let titleMaxWidth = SCREEN_WIDTH - 40
+    private let titleMaxWidth = MW_SCREEN_WIDTH - 40
     private let padding = UIEdgeInsets(top: 4, left: 10, bottom: 4, right: 10)
     
     private var tip : String = ""
@@ -69,13 +69,13 @@ public class MWToastView: UIView {
         var rect : CGRect!
         switch position! {
         case .bottom:
-            rect = CGRect(x: (SCREEN_WIDTH-width)/2.0, y: CGFloat(SCREEN_HEIGHT) - CGFloat(height) - CGFloat(34) - CGFloat(60.0), width: width, height: height)
+            rect = CGRect(x: (MW_SCREEN_WIDTH-width)/2.0, y: CGFloat(MW_SCREEN_HEIGHT) - CGFloat(height) - CGFloat(34) - CGFloat(60.0), width: width, height: height)
             break
         case .center:
-            rect = CGRect(x: (SCREEN_WIDTH-width)/2.0, y: SCREEN_HEIGHT/2.0 - height/2.0, width: width, height: height)
+            rect = CGRect(x: (MW_SCREEN_WIDTH-width)/2.0, y: MW_SCREEN_HEIGHT/2.0 - height/2.0, width: width, height: height)
             break
         case .top:
-            rect = CGRect(x: (SCREEN_WIDTH-width)/2.0, y: STATUS_HEIGHT, width: width, height: height)
+            rect = CGRect(x: (MW_SCREEN_WIDTH-width)/2.0, y: MW_STATUS_HEIGHT, width: width, height: height)
             break
         }
 

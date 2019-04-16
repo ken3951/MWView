@@ -38,7 +38,7 @@ public class MWLocationManager: NSObject, CLLocationManagerDelegate {
     }
     
     //MARK:--CLLocationManagerDelegate
-    private func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         manager.stopUpdatingLocation()
         if let newLocation = locations.last {
             let geo = CLGeocoder()
@@ -62,7 +62,7 @@ public class MWLocationManager: NSObject, CLLocationManagerDelegate {
         }
     }
     
-    private func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+    public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         switch status {
         case .notDetermined:
             manager.requestWhenInUseAuthorization()
