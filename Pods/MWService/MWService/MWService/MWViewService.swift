@@ -33,7 +33,7 @@ public extension MWViewProtocol where Self : UIView {
         }
         for view in inView!.subviews {
             if view.isKind(of: self) {
-                mw_mainSynWait {
+                mw_mainSyn {
                     view.removeFromSuperview()
                 }
             }

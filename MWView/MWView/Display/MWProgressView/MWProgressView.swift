@@ -16,7 +16,7 @@ public class MWProgressView: UIView, MWViewProtocol {
     private var logoImgView : UIImageView!
     
     public static func show(message:String, isLandscape: Bool = false ) {
-        mw_mainSynWait {
+        mw_mainSyn {
             if let fatherView = mw_getCurrentRootVC()?.view {
                 var width = MW_SCREEN_WIDTH > MW_SCREEN_HEIGHT ? MW_SCREEN_WIDTH : MW_SCREEN_HEIGHT
                 var height = MW_SCREEN_WIDTH > MW_SCREEN_HEIGHT ? MW_SCREEN_HEIGHT : MW_SCREEN_WIDTH
@@ -39,7 +39,7 @@ public class MWProgressView: UIView, MWViewProtocol {
     }
     
     public static func show(_ indicatorType: NVActivityIndicatorType = .ballRotateChase,_ color: UIColor? = UIColor.white) {
-        mw_mainSynWait {
+        mw_mainSyn {
             if let fatherView = mw_getCurrentRootVC()?.view {
                 DispatchQueue.main.async {
                     let progressView = MWProgressView()

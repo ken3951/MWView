@@ -3,7 +3,7 @@ use_frameworks!
 
 target 'MWView' do
 
-  pod 'MWService', '~> 1.0.8'
+  pod 'MWService', '~> 1.1.1'
   
   pod 'MJRefresh', '3.1.12'
   

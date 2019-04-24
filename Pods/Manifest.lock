@@ -1,9 +1,9 @@
 PODS:
   - Masonry (1.1.0)
   - MJRefresh (3.1.12)
-  - MWBasic (1.0.8)
-  - MWService (1.0.8):
-    - MWBasic (~> 1.0.6)
+  - MWBasic (1.1.0)
+  - MWService (1.1.1):
+    - MWBasic (~> 1.1.0)
   - NVActivityIndicatorView (4.4.1):
     - NVActivityIndicatorView/Presenter (= 4.4.1)
   - NVActivityIndicatorView/Presenter (4.4.1)
@@ -11,7 +11,7 @@ PODS:
 DEPENDENCIES:
   - Masonry
   - MJRefresh (= 3.1.12)
-  - MWService (~> 1.0.8)
+  - MWService (~> 1.1.1)
   - NVActivityIndicatorView (~> 4.4.0)
 
 SPEC REPOS:
@@ -25,10 +25,10 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  MWBasic: 858d4817987f33f9e07f5cd6a70bd7094b5653c6
-  MWService: bd3ae422ffa6b8591d2bdcd0dae1ca786f21be15
+  MWBasic: 9abc742ca9e9478edee1d75bd20330a5632c1a4e
+  MWService: 2c47eb89321bbcd07746cb49fccedd6a95035701
   NVActivityIndicatorView: f0a6b0ed2973d9544da268f4eb76696f0a9577b0
 
-PODFILE CHECKSUM: 88673b2beb37c6cb86108daa38cf1bb52264abdd
+PODFILE CHECKSUM: a9e38cd17c115cedeabdcfb7784aa366c1025ece
 
 COCOAPODS: 1.6.1

@@ -48,8 +48,8 @@ public func mw_print_i<T>(_ message: T) {
     #endif
 }
 
-///子线程，主线程皆可使用，等待主线程操作完成
-public func mw_mainSynWait(_ execute: @escaping MWCallback) {
+///子线程，主线程皆可使用，主线程同步
+public func mw_mainSyn(_ execute: @escaping MWCallback) {
     if Thread.isMainThread {
         execute()
     }else{
@@ -60,6 +60,16 @@ public func mw_mainSynWait(_ execute: @escaping MWCallback) {
         }
         semaphore.wait()
     }
+}
+
+///子线程同步操作
+public func mw_globalSyn(_ execute: @escaping MWCallback) {
+    let semaphore =  DispatchSemaphore(value: 0)
+    DispatchQueue.global().async {
+        execute()
+        semaphore.signal()
+    }
+    semaphore.wait()
 }
 
 ///拼接路径
@@ -192,7 +202,7 @@ public func mw_callPhone(mobile: String?) {
     }}
 
 ///转换视频格式
-public func mw_changeVideoFormatWithSourceUrl(sourceUrl: URL, completion: @escaping MWStringCallback) {
+public func mw_convertVideoFormatToMp4(sourceUrl: URL, completion: @escaping MWStringCallback) {
     let avAsset = AVURLAsset(url: sourceUrl, options: nil)
     let compatiblePresets = AVAssetExportSession.exportPresets(compatibleWith: avAsset)
     if compatiblePresets.contains(AVAssetExportPresetHighestQuality) {
@@ -200,7 +210,7 @@ public func mw_changeVideoFormatWithSourceUrl(sourceUrl: URL, completion: @escap
         
         let formater = DateFormatter()
         formater.dateFormat = "yyyy-MM-dd-HH-mm-ss"
-        let filePath = "output-\(formater.string(from: Date())).mp4"
+        let filePath = "mp4Video/output-\(formater.string(from: Date())).mp4"
         let resultPath = NSHomeDirectory().appending("/Documents/\(filePath)")
         
         exportSession?.outputURL = URL(fileURLWithPath: resultPath)
