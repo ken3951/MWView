@@ -49,7 +49,7 @@ public class MWSingleTableView: MWPagedTableView, UITableViewDelegate, UITableVi
         initData()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initData()
     }

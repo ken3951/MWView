@@ -21,7 +21,7 @@ public class MWDeleteView: UIView {
     public var selectedBGColor = UIColor.mw_colorFromHex(hexColor:"46d1bf")
 
 
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initUI()
     }

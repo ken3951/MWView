@@ -25,7 +25,7 @@ public class MWTabMenuView: UIView {
     private var lineView = UIView()
     public var callBack: MWTabMenuViewCallBack?
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         initUI()
