@@ -11,19 +11,19 @@ import UIKit
 public typealias MWTabMenuViewCallBack = (_ page: Int) -> Void
 
 public class MWTabMenuView: UIView {
-    var normalTextColor = UIColor.mw_colorFromHex(hexColor:"8a8a8a")
-    var highlightedTextColor = UIColor.mw_colorFromHex(hexColor:"009d8e")
-    var textFont: UIFont = UIFont.systemFont(ofSize: 16)
-    var lineViewWidth: CGFloat?
-    var lineViewHeight: CGFloat = 2
-    var lineViewColor = UIColor.mw_colorFromHex(hexColor:"009d8e")
-    var defaultPage: Int = 0
+    public var normalTextColor = UIColor.mw_colorFromHex(hexColor:"8a8a8a")
+    public var highlightedTextColor = UIColor.mw_colorFromHex(hexColor:"009d8e")
+    public var textFont: UIFont = UIFont.systemFont(ofSize: 16)
+    public var lineViewWidth: CGFloat?
+    public var lineViewHeight: CGFloat = 2
+    public var lineViewColor = UIColor.mw_colorFromHex(hexColor:"009d8e")
+    public var defaultPage: Int = 0
 
     private var menuTitleArray: Array<String> = []
     private var menuBtnArray: Array<UIButton> = []
     private var selectedPage = 0
     private var lineView = UIView()
-    var callBack: MWTabMenuViewCallBack?
+    public var callBack: MWTabMenuViewCallBack?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
