@@ -16,19 +16,14 @@
 		380055612251B84500BA80E3 /* MWSingleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055602251B84500BA80E3 /* MWSingleTableView.swift */; };
 		380055632251BA7600BA80E3 /* MWPagedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055622251BA7600BA80E3 /* MWPagedTableView.swift */; };
 		3800559F2253033B00BA80E3 /* MWRegularCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055912253033A00BA80E3 /* MWRegularCollectionView.swift */; };
-		380055A02253033B00BA80E3 /* MWNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055922253033A00BA80E3 /* MWNibView.swift */; };
-		380055A12253033B00BA80E3 /* MWNibLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055932253033A00BA80E3 /* MWNibLabel.swift */; };
 		380055A22253033B00BA80E3 /* MWCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055942253033A00BA80E3 /* MWCollectionView.swift */; };
-		380055A32253033B00BA80E3 /* MWNibImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055952253033A00BA80E3 /* MWNibImageView.swift */; };
 		380055A42253033B00BA80E3 /* MWDeleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055962253033A00BA80E3 /* MWDeleteView.swift */; };
 		380055A52253033B00BA80E3 /* MWTransparentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055972253033A00BA80E3 /* MWTransparentView.swift */; };
-		380055A62253033B00BA80E3 /* MWNibTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055982253033A00BA80E3 /* MWNibTextField.swift */; };
 		380055A72253033B00BA80E3 /* MWTextCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055992253033A00BA80E3 /* MWTextCollectionView.swift */; };
 		380055A82253033B00BA80E3 /* MWBezierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800559A2253033A00BA80E3 /* MWBezierView.swift */; };
 		380055A92253033B00BA80E3 /* MWAdjustCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800559B2253033A00BA80E3 /* MWAdjustCollectionView.swift */; };
 		380055AA2253033B00BA80E3 /* MWPagedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800559C2253033A00BA80E3 /* MWPagedScrollView.swift */; };
 		380055AB2253033B00BA80E3 /* MWTabMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800559D2253033A00BA80E3 /* MWTabMenuView.swift */; };
-		380055AC2253033B00BA80E3 /* MWNibButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800559E2253033B00BA80E3 /* MWNibButton.swift */; };
 		380055B82253049E00BA80E3 /* MWPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055AE2253049E00BA80E3 /* MWPopover.swift */; };
 		380055B92253049E00BA80E3 /* MWNoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055B02253049E00BA80E3 /* MWNoDataView.swift */; };
 		380055BA2253049E00BA80E3 /* mw_ic_no_data@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 380055B12253049E00BA80E3 /* mw_ic_no_data@2x.png */; };
@@ -55,19 +50,14 @@
 		380055602251B84500BA80E3 /* MWSingleTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWSingleTableView.swift; sourceTree = "<group>"; };
 		380055622251BA7600BA80E3 /* MWPagedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWPagedTableView.swift; sourceTree = "<group>"; };
 		380055912253033A00BA80E3 /* MWRegularCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWRegularCollectionView.swift; sourceTree = "<group>"; };
-		380055922253033A00BA80E3 /* MWNibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWNibView.swift; sourceTree = "<group>"; };
-		380055932253033A00BA80E3 /* MWNibLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWNibLabel.swift; sourceTree = "<group>"; };
 		380055942253033A00BA80E3 /* MWCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWCollectionView.swift; sourceTree = "<group>"; };
-		380055952253033A00BA80E3 /* MWNibImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWNibImageView.swift; sourceTree = "<group>"; };
 		380055962253033A00BA80E3 /* MWDeleteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWDeleteView.swift; sourceTree = "<group>"; };
 		380055972253033A00BA80E3 /* MWTransparentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWTransparentView.swift; sourceTree = "<group>"; };
-		380055982253033A00BA80E3 /* MWNibTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWNibTextField.swift; sourceTree = "<group>"; };
 		380055992253033A00BA80E3 /* MWTextCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWTextCollectionView.swift; sourceTree = "<group>"; };
 		3800559A2253033A00BA80E3 /* MWBezierView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWBezierView.swift; sourceTree = "<group>"; };
 		3800559B2253033A00BA80E3 /* MWAdjustCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWAdjustCollectionView.swift; sourceTree = "<group>"; };
 		3800559C2253033A00BA80E3 /* MWPagedScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWPagedScrollView.swift; sourceTree = "<group>"; };
 		3800559D2253033A00BA80E3 /* MWTabMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWTabMenuView.swift; sourceTree = "<group>"; };
-		3800559E2253033B00BA80E3 /* MWNibButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWNibButton.swift; sourceTree = "<group>"; };
 		380055AE2253049E00BA80E3 /* MWPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWPopover.swift; sourceTree = "<group>"; };
 		380055B02253049E00BA80E3 /* MWNoDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWNoDataView.swift; sourceTree = "<group>"; };
 		380055B12253049E00BA80E3 /* mw_ic_no_data@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mw_ic_no_data@2x.png"; sourceTree = "<group>"; };
@@ -147,11 +137,6 @@
 				3800559A2253033A00BA80E3 /* MWBezierView.swift */,
 				380055942253033A00BA80E3 /* MWCollectionView.swift */,
 				380055962253033A00BA80E3 /* MWDeleteView.swift */,
-				3800559E2253033B00BA80E3 /* MWNibButton.swift */,
-				380055952253033A00BA80E3 /* MWNibImageView.swift */,
-				380055932253033A00BA80E3 /* MWNibLabel.swift */,
-				380055982253033A00BA80E3 /* MWNibTextField.swift */,
-				380055922253033A00BA80E3 /* MWNibView.swift */,
 				3800559C2253033A00BA80E3 /* MWPagedScrollView.swift */,
 				380055622251BA7600BA80E3 /* MWPagedTableView.swift */,
 				380055912253033A00BA80E3 /* MWRegularCollectionView.swift */,
@@ -345,7 +330,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				380055A02253033B00BA80E3 /* MWNibView.swift in Sources */,
 				380055AA2253033B00BA80E3 /* MWPagedScrollView.swift in Sources */,
 				3800554D2251B27500BA80E3 /* ViewController.swift in Sources */,
 				380055A92253033B00BA80E3 /* MWAdjustCollectionView.swift in Sources */,
@@ -354,7 +338,6 @@
 				380055B82253049E00BA80E3 /* MWPopover.swift in Sources */,
 				380055B92253049E00BA80E3 /* MWNoDataView.swift in Sources */,
 				380055A22253033B00BA80E3 /* MWCollectionView.swift in Sources */,
-				380055A12253033B00BA80E3 /* MWNibLabel.swift in Sources */,
 				380055BF2253049E00BA80E3 /* MWProgressView.swift in Sources */,
 				380055A52253033B00BA80E3 /* MWTransparentView.swift in Sources */,
 				380055A82253033B00BA80E3 /* MWBezierView.swift in Sources */,
@@ -363,11 +346,8 @@
 				380055A72253033B00BA80E3 /* MWTextCollectionView.swift in Sources */,
 				380055A42253033B00BA80E3 /* MWDeleteView.swift in Sources */,
 				380055BB2253049E00BA80E3 /* MWPickView.swift in Sources */,
-				380055A62253033B00BA80E3 /* MWNibTextField.swift in Sources */,
 				380055612251B84500BA80E3 /* MWSingleTableView.swift in Sources */,
 				380055AB2253033B00BA80E3 /* MWTabMenuView.swift in Sources */,
-				380055A32253033B00BA80E3 /* MWNibImageView.swift in Sources */,
-				380055AC2253033B00BA80E3 /* MWNibButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
