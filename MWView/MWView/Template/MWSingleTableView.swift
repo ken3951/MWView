@@ -14,21 +14,21 @@ extension UITableViewCell: MWCellLoadService {
 
 public class MWSingleTableView: MWPagedTableView, UITableViewDelegate, UITableViewDataSource {
     
-    public typealias DataArrayCallBack = () -> Array<Any?>?
+    public typealias NumberOfRowsCallBack = () -> Int
     public typealias CellCallBack = (_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell
     public typealias CellClickCallBack = (_ indexPath: IndexPath) -> Void
     public typealias CellCanEditCallBack = (_ tableView: UITableView, _ indexPath: IndexPath) -> Bool
     public typealias CellEditCallBack = (_ tableView: UITableView, _ indexPath: IndexPath) -> [UITableViewRowAction]?
     
-    private var dataArray: Array<Any?>?
-    private var dataArrayCallBack: DataArrayCallBack?
+    private var rows: Int = 0
+    private var numberOfRowsCallBack: NumberOfRowsCallBack?
     private var cellCallBack: CellCallBack!
     private var cellClickCallBack: CellClickCallBack?
     private var cellCanEditCallBack: CellCanEditCallBack?
     private var cellEditCallBack: CellEditCallBack?
 
-    public func load(dataArrayCallBack: @escaping DataArrayCallBack, cellCallBack: @escaping CellCallBack, cellClickCallBack: CellClickCallBack? = nil) {
-        self.dataArrayCallBack = dataArrayCallBack
+    public func load(numberOfRowsCallBack: @escaping NumberOfRowsCallBack, cellCallBack: @escaping CellCallBack, cellClickCallBack: CellClickCallBack? = nil) {
+        self.numberOfRowsCallBack = numberOfRowsCallBack
         self.cellCallBack = cellCallBack
         self.cellClickCallBack = cellClickCallBack
         self.reloadData()
@@ -40,7 +40,7 @@ public class MWSingleTableView: MWPagedTableView, UITableViewDelegate, UITableVi
     }
     
     override public func reloadData() {
-        self.dataArray = self.dataArrayCallBack?()
+        self.rows = self.numberOfRowsCallBack?() ?? 0
         super.reloadData()
     }
     
@@ -60,7 +60,7 @@ public class MWSingleTableView: MWPagedTableView, UITableViewDelegate, UITableVi
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataArray?.count ?? 0
+        return rows
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

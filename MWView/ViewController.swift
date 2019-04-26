@@ -24,8 +24,8 @@ class ViewController: UIViewController {
         reloadGoodsView()
         
         myTableView.separatorInset = mw_tableViewSeparatorEdge(40, 40)
-        myTableView.load(dataArrayCallBack: {[weak self] () -> Array<Any?>? in
-            return self?.dataArray
+        myTableView.load(numberOfRowsCallBack: {[weak self] () -> Int in
+            return self?.dataArray.count ?? 0
         }, cellCallBack: {[weak self] (tableView,indexPath) -> UITableViewCell in
             let cell = UITableViewCell()
             cell.textLabel?.text = self?.dataArray[indexPath.row]
