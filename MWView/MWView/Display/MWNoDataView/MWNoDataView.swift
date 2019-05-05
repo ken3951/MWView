@@ -47,7 +47,12 @@ public class MWNoDataView: UIView {
         
         let image1 = UIImage(named: "mw_ic_no_data")
         let bundle = Bundle(for: type(of: self))
+        
         let image2 = UIImage(named: "mw_ic_no_data", in: bundle, compatibleWith: nil)
+        if image2 != nil {
+            imageWidth = image2!.size.width
+            imageHeight = image2!.size.height
+        }
         
         let imgView = UIImageView().mw_image(image1 ?? image2)
             .mw_contentMode(.scaleAspectFit)
