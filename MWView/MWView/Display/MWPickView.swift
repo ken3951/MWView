@@ -9,7 +9,7 @@
 import UIKit
 
 
-public enum PickViewType : NSInteger {
+public enum MWPickViewType : NSInteger {
     case dateWithYearToDay          =   101     //年月日
     case dateWithYearToMinute                   //年月日时分
     case dateWithHourToMinute                   //时分
@@ -29,7 +29,7 @@ public class MWPickView: UIView ,UIPickerViewDelegate,UIPickerViewDataSource{
     private var contentView : UIView!
     private var currentValue : Any?
     private var completionBlock : MWAnyCallback?
-    private var pickViewType : PickViewType?
+    private var pickViewType : MWPickViewType?
     private var fatherRect : CGRect!
     
     //dateWithYearMonthDay
@@ -40,7 +40,7 @@ public class MWPickView: UIView ,UIPickerViewDelegate,UIPickerViewDataSource{
     private var educationArray = ["小学","初中","高中","中专","大专","本科","硕士","博士"]
 
     public static func showIn(view: UIView?,
-                       pickViewType: PickViewType,
+                       pickViewType: MWPickViewType,
                        dataArray: Array<Any>? = nil,
                        currentValue:Any?,
                        completion:@escaping MWAnyCallback) -> Void {
@@ -223,7 +223,7 @@ public class MWPickView: UIView ,UIPickerViewDelegate,UIPickerViewDataSource{
     
     public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         switch self.pickViewType! {
-        case PickViewType.dateWithYearToDay:
+        case MWPickViewType.dateWithYearToDay:
             switch component {
             case 0:
                 return 100
@@ -235,7 +235,7 @@ public class MWPickView: UIView ,UIPickerViewDelegate,UIPickerViewDataSource{
             default:
                 return 0
             }
-        case PickViewType.dateWithYearToMinute:
+        case MWPickViewType.dateWithYearToMinute:
             switch component {
             case 0:
                 return 100
@@ -251,7 +251,7 @@ public class MWPickView: UIView ,UIPickerViewDelegate,UIPickerViewDataSource{
             default:
                 return 0
             }
-        case PickViewType.dateWithHourToMinute:
+        case MWPickViewType.dateWithHourToMinute:
             switch component {
             case 0:
                 return 24
