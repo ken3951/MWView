@@ -12,8 +12,8 @@ public class MWDeleteView: UIView {
     
     public typealias MWDeleteViewCallBack = () -> Void
     
-    private var contentView = UIButton()
-    private var deleteBtn = UIButton()
+    public var contentView = UIButton()
+    public var deleteBtn = UIButton()
     private var callBack: MWDeleteViewCallBack?
     private var isSelected: Bool = false
     
