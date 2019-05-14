@@ -30,6 +30,12 @@ public class MWNoDataView: UIView {
         
         let selfView = MWNoDataView().mw_userInteractionEnabled(false)
             .mw_addToView(view)
+        if noDataImageName != nil {
+            selfView.config.noDataImageName = noDataImageName!
+        }
+        if noDataTitle != nil {
+            selfView.config.noDataTitle = noDataTitle!
+        }
         selfView.initUI()
         
         selfView.mas_makeConstraints { (make) in
@@ -40,21 +46,22 @@ public class MWNoDataView: UIView {
     func initUI() {
         var imageWidth: CGFloat = 0.0
         var imageHeight: CGFloat = 0.0
+        var contentImage: UIImage?
+        
+        let bundle = Bundle(for: type(of: self))
+        if let image = UIImage(named: config.noDataImageName, in: bundle, compatibleWith: nil) {
+            imageWidth = image.size.width
+            imageHeight = image.size.height
+            contentImage = image
+        }
+        
         if let image = UIImage(named: config.noDataImageName) {
             imageWidth = image.size.width
             imageHeight = image.size.height
+            contentImage = image
         }
         
-        let image1 = UIImage(named: "mw_ic_no_data")
-        let bundle = Bundle(for: type(of: self))
-        
-        let image2 = UIImage(named: "mw_ic_no_data", in: bundle, compatibleWith: nil)
-        if image2 != nil {
-            imageWidth = image2!.size.width
-            imageHeight = image2!.size.height
-        }
-        
-        let imgView = UIImageView().mw_image(image1 ?? image2)
+        let imgView = UIImageView().mw_image(contentImage)
             .mw_contentMode(.scaleAspectFit)
             .mw_addToView(self)
         
@@ -64,7 +71,6 @@ public class MWNoDataView: UIView {
             make?.height.equalTo()(imageHeight)
             make?.left.equalTo()(self)
             make?.right.equalTo()(self)
-            make?.centerX.equalTo()(self)
         }
         
         let tipLabel = UILabel().mw_font(config.font)
