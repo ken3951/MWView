@@ -52,7 +52,7 @@ public class MWDeleteView: UIView {
     private func addDeleteBtn() {
         super.addSubview(deleteBtn)
         setDeleteBtn(isHidden: true)
-        _ = deleteBtn.mw_bgColor(.red)
+        _ = deleteBtn.mw_bgColor(.clear)
         deleteBtn.addTarget(self, action: #selector(deleteBtnAction), for: .touchUpInside)
     }
     
