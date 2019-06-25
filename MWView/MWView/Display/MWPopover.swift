@@ -8,7 +8,7 @@
 
 import UIKit
 
-public typealias MWPopoverCallBack = (_ index: Int) -> Void
+public typealias MWPopoverCallBack = (_ index: Int?) -> Void
 
 public class MWPopoverConfig: NSObject {
     ///popover填充颜色
@@ -208,6 +208,7 @@ public class MWPopover: UIView {
         pathRef.closeSubpath()
         
         if !pathRef.contains(point) {
+            self.callBack(nil)
             self.removeFromSuperview()
         }
     }
