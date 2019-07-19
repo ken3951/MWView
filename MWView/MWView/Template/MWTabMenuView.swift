@@ -45,11 +45,13 @@ public class MWTabMenuView: UIView {
         self.setNeedsLayout()
         self.layoutIfNeeded()
         
+        lineView.backgroundColor = lineViewColor
+
         var contentWidth: CGFloat = 0
         for i in 0..<menuTitleArray.count {
             let title = menuTitleArray[i]
             let btn = UIButton(type: .custom).mw_target(self, action: #selector(menuBtnAction(_:)), forControlEvents: .touchUpInside).mw_title(title, state: .normal)
-                .mw_titleColor(normalTextColor, state: .normal).mw_titleColor(highlightedTextColor, state: .selected).mw_addToView(self)
+                .mw_titleColor(normalTextColor, state: .normal).mw_titleColor(highlightedTextColor, state: .selected)
             btn.titleLabel?.font = textFont
             let size = btn.sizeThatFits(CGSize(width: 1000, height: 0))
             contentWidth = contentWidth + size.width

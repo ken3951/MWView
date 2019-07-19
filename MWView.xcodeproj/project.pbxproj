@@ -27,11 +27,14 @@
 		380055B82253049E00BA80E3 /* MWPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055AE2253049E00BA80E3 /* MWPopover.swift */; };
 		380055B92253049E00BA80E3 /* MWNoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055B02253049E00BA80E3 /* MWNoDataView.swift */; };
 		380055BA2253049E00BA80E3 /* mw_ic_no_data@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 380055B12253049E00BA80E3 /* mw_ic_no_data@2x.png */; };
-		380055BB2253049E00BA80E3 /* MWPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055B22253049E00BA80E3 /* MWPickView.swift */; };
+		380055BB2253049E00BA80E3 /* MWPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055B22253049E00BA80E3 /* MWPickerView.swift */; };
 		380055BD2253049E00BA80E3 /* ic_loading_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 380055B52253049E00BA80E3 /* ic_loading_logo@3x.png */; };
 		380055BE2253049E00BA80E3 /* ic_loading_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 380055B62253049E00BA80E3 /* ic_loading_logo@2x.png */; };
 		380055BF2253049E00BA80E3 /* MWProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055B72253049E00BA80E3 /* MWProgressView.swift */; };
 		380055C122530B6400BA80E3 /* mw_area.json in Resources */ = {isa = PBXBuildFile; fileRef = 380055C022530B6400BA80E3 /* mw_area.json */; };
+		383BCAD822C4B92E00FFC72D /* MWStartEndTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383BCAD722C4B92E00FFC72D /* MWStartEndTimeView.swift */; };
+		38410CAC22CDD871006590E8 /* MWPopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38410CAB22CDD871006590E8 /* MWPopMenu.swift */; };
+		3890FC4722C4571B0003C4C0 /* MWTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3890FC4622C4571B0003C4C0 /* MWTimePicker.swift */; };
 		38BEDA3C225EF6A100718C3D /* RelateGoodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BEDA3B225EF6A100718C3D /* RelateGoodsView.swift */; };
 		38BEDA3F225F119500718C3D /* ic_remove@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BEDA3D225F119500718C3D /* ic_remove@3x.png */; };
 		38BEDA40225F119500718C3D /* ic_remove@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BEDA3E225F119500718C3D /* ic_remove@2x.png */; };
@@ -61,11 +64,14 @@
 		380055AE2253049E00BA80E3 /* MWPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWPopover.swift; sourceTree = "<group>"; };
 		380055B02253049E00BA80E3 /* MWNoDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWNoDataView.swift; sourceTree = "<group>"; };
 		380055B12253049E00BA80E3 /* mw_ic_no_data@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mw_ic_no_data@2x.png"; sourceTree = "<group>"; };
-		380055B22253049E00BA80E3 /* MWPickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWPickView.swift; sourceTree = "<group>"; };
+		380055B22253049E00BA80E3 /* MWPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWPickerView.swift; sourceTree = "<group>"; };
 		380055B52253049E00BA80E3 /* ic_loading_logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_loading_logo@3x.png"; sourceTree = "<group>"; };
 		380055B62253049E00BA80E3 /* ic_loading_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_loading_logo@2x.png"; sourceTree = "<group>"; };
 		380055B72253049E00BA80E3 /* MWProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWProgressView.swift; sourceTree = "<group>"; };
 		380055C022530B6400BA80E3 /* mw_area.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mw_area.json; sourceTree = "<group>"; };
+		383BCAD722C4B92E00FFC72D /* MWStartEndTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWStartEndTimeView.swift; sourceTree = "<group>"; };
+		38410CAB22CDD871006590E8 /* MWPopMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWPopMenu.swift; sourceTree = "<group>"; };
+		3890FC4622C4571B0003C4C0 /* MWTimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWTimePicker.swift; sourceTree = "<group>"; };
 		38BEDA3B225EF6A100718C3D /* RelateGoodsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelateGoodsView.swift; sourceTree = "<group>"; };
 		38BEDA3D225F119500718C3D /* ic_remove@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_remove@3x.png"; sourceTree = "<group>"; };
 		38BEDA3E225F119500718C3D /* ic_remove@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_remove@2x.png"; sourceTree = "<group>"; };
@@ -152,9 +158,12 @@
 			isa = PBXGroup;
 			children = (
 				380055AF2253049E00BA80E3 /* MWNoDataView */,
-				380055B22253049E00BA80E3 /* MWPickView.swift */,
+				383BCAD722C4B92E00FFC72D /* MWStartEndTimeView.swift */,
+				380055B22253049E00BA80E3 /* MWPickerView.swift */,
+				3890FC4622C4571B0003C4C0 /* MWTimePicker.swift */,
 				380055C022530B6400BA80E3 /* mw_area.json */,
 				380055AE2253049E00BA80E3 /* MWPopover.swift */,
+				38410CAB22CDD871006590E8 /* MWPopMenu.swift */,
 				380055B42253049E00BA80E3 /* MWProgressView */,
 			);
 			path = Display;
@@ -332,10 +341,13 @@
 			files = (
 				380055AA2253033B00BA80E3 /* MWPagedScrollView.swift in Sources */,
 				3800554D2251B27500BA80E3 /* ViewController.swift in Sources */,
+				38410CAC22CDD871006590E8 /* MWPopMenu.swift in Sources */,
 				380055A92253033B00BA80E3 /* MWAdjustCollectionView.swift in Sources */,
 				380055632251BA7600BA80E3 /* MWPagedTableView.swift in Sources */,
 				3800559F2253033B00BA80E3 /* MWRegularCollectionView.swift in Sources */,
 				380055B82253049E00BA80E3 /* MWPopover.swift in Sources */,
+				383BCAD822C4B92E00FFC72D /* MWStartEndTimeView.swift in Sources */,
+				3890FC4722C4571B0003C4C0 /* MWTimePicker.swift in Sources */,
 				380055B92253049E00BA80E3 /* MWNoDataView.swift in Sources */,
 				380055A22253033B00BA80E3 /* MWCollectionView.swift in Sources */,
 				380055BF2253049E00BA80E3 /* MWProgressView.swift in Sources */,
@@ -345,7 +357,7 @@
 				3800554B2251B27500BA80E3 /* AppDelegate.swift in Sources */,
 				380055A72253033B00BA80E3 /* MWTextCollectionView.swift in Sources */,
 				380055A42253033B00BA80E3 /* MWDeleteView.swift in Sources */,
-				380055BB2253049E00BA80E3 /* MWPickView.swift in Sources */,
+				380055BB2253049E00BA80E3 /* MWPickerView.swift in Sources */,
 				380055612251B84500BA80E3 /* MWSingleTableView.swift in Sources */,
 				380055AB2253033B00BA80E3 /* MWTabMenuView.swift in Sources */,
 			);
