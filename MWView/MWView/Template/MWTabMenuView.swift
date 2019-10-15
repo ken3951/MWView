@@ -73,7 +73,8 @@ public class MWTabMenuView: UIView {
             btn.bounds = CGRect(x: 0, y: 0, width: size.width + 1.0, height: size.height + 1.0)
             if i == defaultPage {
                 btn.isSelected = true
-                self.lineView.frame = CGRect(x: x-btn.mw_width/2.0, y: self.mw_height - 2.0, width: btn.mw_width, height: 2.0)
+                lineView.bounds = CGRect(x: 0, y: 0, width: btn.mw_width, height: lineViewHeight)
+                lineView.center = CGPoint(x: btn.center.x, y: self.mw_height - lineViewHeight/2.0)
             }
             
             menuBtnArray.append(btn)
@@ -110,8 +111,9 @@ public class MWTabMenuView: UIView {
             return
         }
         let btn = menuBtnArray[page]
-        self.lineView.center.x = btn.center.x
         self.lineView.mw_width = btn.mw_width
+
+        self.lineView.center.x = btn.center.x
 
         selectedPage = page
         reloadMenuBtn()
@@ -122,7 +124,6 @@ public class MWTabMenuView: UIView {
         if let firstBtn = menuBtnArray.first {
             if let lastBtn = menuBtnArray.last {
                 let x = offsetValue * (lastBtn.center.x - firstBtn.center.x)
-                self.lineView.center.x = firstBtn.center.x + x
                 var originPage = Int(offsetValue * CGFloat(menuTitleArray.count - 1))
                 let currentPage = Int(offsetValue * CGFloat(menuTitleArray.count - 1) + 0.5)
                 if currentPage < 0 || currentPage > menuBtnArray.count - 1 {
@@ -150,6 +151,7 @@ public class MWTabMenuView: UIView {
                 let aspect = (offsetValue * CGFloat(menuBtnArray.count - 1) * superview!.mw_width - superview!.mw_width * CGFloat(originPage))/superview!.mw_width
                 let width = beforeBtn.mw_width + (afterBtn.mw_width - beforeBtn.mw_width) * aspect
                 self.lineView.mw_width = lineViewWidth ?? width
+                self.lineView.center.x = firstBtn.center.x + x
                 selectedPage = currentPage
                 reloadMenuBtn()
             }
