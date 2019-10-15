@@ -73,7 +73,7 @@ public class MWTabMenuView: UIView {
             btn.bounds = CGRect(x: 0, y: 0, width: size.width + 1.0, height: size.height + 1.0)
             if i == defaultPage {
                 btn.isSelected = true
-                self.lineView.frame = CGRect(x: btn.mw_x, y: self.mw_height - 2.0, width: btn.mw_width, height: 2.0)
+                self.lineView.frame = CGRect(x: x-btn.mw_width/2.0, y: self.mw_height - 2.0, width: btn.mw_width, height: 2.0)
             }
             
             menuBtnArray.append(btn)
@@ -103,6 +103,18 @@ public class MWTabMenuView: UIView {
                 btn.isSelected = false
             }
         }
+    }
+    
+    public func setSelectMenu(page: Int) {
+        if page < 0 || page > menuBtnArray.count - 1 {
+            return
+        }
+        let btn = menuBtnArray[page]
+        self.lineView.center.x = btn.center.x
+        self.lineView.mw_width = btn.mw_width
+
+        selectedPage = page
+        reloadMenuBtn()
     }
     
     public func setLineOffsetValue(_ offsetValue: CGFloat) {
