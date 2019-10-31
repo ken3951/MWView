@@ -40,12 +40,18 @@ public class MWTransparentView: UIView {
         
     }
     
+    public func endTimer() {
+        timer?.fireDate = Date.distantFuture
+        timer?.invalidate()
+        timer = nil
+    }
+    
     @objc private func timerFire() {
         self.setNeedsDisplay()
     }
     
     deinit {
-        timer?.invalidate()
+        print("MWTransparentView deinit")
     }
     
     override public func draw(_ rect: CGRect) {
