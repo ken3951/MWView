@@ -657,15 +657,19 @@ public class MWPickerView: UIView ,UIPickerViewDelegate,UIPickerViewDataSource{
         let touch = ((touches as NSSet).anyObject() as AnyObject)
         let point = touch.location(in:self)
         let pathRef = CGMutablePath.init()
-        pathRef.move(to: CGPoint(x: contentView.frame.origin.x, y: contentView.frame.origin.y))
-        pathRef.addLine(to: CGPoint(x: contentView.frame.origin.x + contentView.frame.size.width, y: contentView.frame.origin.y))
-        pathRef.addLine(to: CGPoint(x: contentView.frame.origin.x + contentView.frame.size.width, y: contentView.frame.origin.y + contentView.frame.size.height))
-        pathRef.addLine(to: CGPoint(x: contentView.frame.origin.x, y: contentView.frame.origin.y + contentView.frame.size.height))
-        pathRef.addLine(to: CGPoint(x: contentView.frame.origin.x, y: contentView.frame.origin.y))
+        let min_x = contentView.frame.origin.x
+        let max_x = contentView.frame.origin.x + contentView.frame.size.width
+        let min_y = contentView.frame.origin.y
+        let max_y = contentView.frame.origin.y + contentView.frame.size.height
+        pathRef.move(to: CGPoint(x: min_x, y: min_y))
+        pathRef.addLine(to: CGPoint(x: max_x, y: min_y))
+        pathRef.addLine(to: CGPoint(x: max_x, y: max_y))
+        pathRef.addLine(to: CGPoint(x: min_x, y: max_y))
+        pathRef.addLine(to: CGPoint(x: min_x, y: min_y))
         pathRef.closeSubpath()
         
         if !pathRef.contains(point) {
-            self.dismissAnimation()
+//            self.dismissAnimation()
         }
     }
     /*

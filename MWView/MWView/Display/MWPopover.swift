@@ -131,7 +131,10 @@ public class MWPopover: UIView {
             arrow_x = max(mainView_width/2.0 - (config.horizontalLead - (convertFrame.origin.x + (convertFrame.size.width - mainView_width)/2.0)), config.strokeWidth/2.0 + config.cornerRadius + config.trigonBottomWidth/2.0)
             mainView_x = config.horizontalLead
         }
-        if mainView_x + cellSize.width > fatherView.frame.size.width - config.horizontalLead {
+        let mainViewMaxX = mainView_x + cellSize.width
+        let maxX = fatherView.frame.size.width - config.horizontalLead
+
+        if mainViewMaxX > maxX {
             arrow_x = min(cellSize.width - config.strokeWidth/2.0 - config.cornerRadius - config.trigonBottomWidth/2.0, mainView_width/2.0 + (mainView_x + cellSize.width - fatherView.frame.size.width + config.horizontalLead))
             mainView_x = fatherView.frame.size.width - config.horizontalLead - mainView_width
         }

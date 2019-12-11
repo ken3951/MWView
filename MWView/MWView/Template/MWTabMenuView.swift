@@ -32,6 +32,11 @@ public class MWTabMenuView: UIView {
         
     }
     
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        initUI()
+    }
+    
     private func initUI() {
         
         lineView = lineView.mw_bgColor(lineViewColor).mw_addToView(self)
